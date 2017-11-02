@@ -1,19 +1,20 @@
 <template>
-  <header class="mp-header">
-    <a class="mp-header-left">
+  <header class="header">
+    <a class="header-left">
       <i class="iconfont icon-fanhui"></i>
       </a>
-    <div class="mp-header-title">
+    <div class="header-title">
       <i class="iconfont icon-sousuo"></i>
-     输入城市/景点/游玩主题1
+     输入城市/景点/游玩主题
     </div>
-    <div class="mp-header-right" mp-role="right">
-      <a href="/touch/toNewCityList.htm" title="城市选择" class="mp-linkarea">
-      北京
+    <div class="header-right">
+      <a href="/touch/toNewCityList.htm" title="城市选择" class="linkarea">
+      乌鲁木齐
       </a>
+      <span class="triangle_border_down"></span>
 
     </div>
-    <span class="triangle_border_down"></span>
+   
   </header>
 </template>
 
@@ -23,7 +24,7 @@
 </script>
 
 <style scoped>
-  .mp-header{
+  .header{
     position: relative;
     display: box;
     width: 100%;
@@ -32,7 +33,7 @@
     text-align: center;
     color: #fff;
   }
-  .mp-header-left{
+  .header-left{
     float: left;
     width: .4rem;
     line-height: .88rem;
@@ -41,7 +42,7 @@
     font-size: .36rem;
     text-align: left;
   }
-  .mp-header-title {
+  .header-title {
     position:absolute;
     top:.14rem;
     left:.8rem;
@@ -51,27 +52,28 @@
     color:#ccc;
     border-radius: .06rem;
   }
-  .mp-header-right{
+  .header-right{
     width:1.28rem;
     float: right;
     line-height: .88rem;
+  }
+  .linkarea{
+    display:inline-block;
+    width: .8rem;
+    height: .6rem;
+    line-height: .6rem;
+    margin-top: .15rem;
+    color:#fff;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .mp-linkarea{
-    color:#fff;
-    position: relative;
-    right:8px;
-  }
   .triangle_border_down{
-    position:relative;
+    display: inline-block;
     border-width:7px 7px 0;
     border-style:solid;
     border-color:#fff transparent transparent;
-    top:27px;
-    left:155px;
-
+    margin-bottom: .2rem;
   }
 
 </style>
