@@ -1,7 +1,7 @@
 <template>
   <header class="mp-header">
     <a class="mp-header-left">
-      <i class="iconfont icon-fanhui"></i>
+      <i class="iconfont icon-return"></i>
       </a>
     <div class="mp-header-title">
       <i class="iconfont icon-sousuo"></i>
