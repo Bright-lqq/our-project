@@ -2,16 +2,19 @@
    <div>
     <index-header />
     <index-swiper />
+    <index-weekendlist />
   </div>
 </template>
 
 <script>
  import header from "./Header.vue";
  import swiper from "./Swiper.vue";
+ import weekendlist from "./WeekendList.vue";
   export default{
     components: {
       "index-header": header,
-      "index-swiper": swiper
+      "index-swiper": swiper,
+      "index-weekendlist":weekendlist
     }
   }
 </script>
