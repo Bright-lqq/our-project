@@ -63,6 +63,7 @@
     .hot_list {
         width: 100%;
         height: 11.06rem;
+        background: #fff;
     }
     .hot_list .hot_nav {
         height: .8rem;
