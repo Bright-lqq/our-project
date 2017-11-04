@@ -80,7 +80,7 @@
         margin-left:.08rem;
     }
     .bullet-active{
-        background:#fff;
+        background:#fff!important;
     }
 
 </style>
