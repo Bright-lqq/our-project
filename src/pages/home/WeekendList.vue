@@ -1,13 +1,13 @@
 <template>
     <div class="lazy-load" id="weekend-trip">
-        <h2 class="mp-modtitle">周末去哪儿</h2>
+        <h2 class="modtitle">周末去哪儿</h2>
             <div>
-                <div class="mp-product-item" v-for="list in weekendlist" :key="list.id">
-                    <a href="#" class="mp-fulllink">
+                <div class="product-item" v-for="list in weekendlist" :key="list.id">
+                    <a href="#" class="fulllink">
                         <div class="product-imgcontainer image-ready">
                             <img :src="list.src" :alt="list.tip" />
                         </div>
-                        <div class="mp-product-info">
+                        <div class="product-info">
                             <p class="product-name">{{list.name}}</p>
                             <p class="product-desc">{{list.article}}</p>
                         </div>
@@ -59,7 +59,7 @@
 </script>
 
 <style scoped>
-    .mp-modtitle {
+    .modtitle {
         height: .8rem;
         padding-left: .26rem;
         line-height: .8rem;
@@ -70,12 +70,12 @@
         text-overflow: ellipsis;
 
     }
-    .mp-product-item {
+    .product-item {
         position: relative;
         margin-bottom: .1rem;
         background: #fff;
     }
-    .mp-fulllink {
+    .fulllink {
         display: block;
         width: 100%;
         height: 100%;
@@ -89,11 +89,11 @@
         transition: opacity 400ms;
         width: 100%;
     }
-    .mp-product-info {
+    .product-info {
         position: relative;
         padding: .14rem .2rem .2rem .2rem;
     }
-    .mp-product-item .product-name {
+    .product-item .product-name {
         padding-right: 1.4rem;
         color: #212121;
         font-size: .28rem;
@@ -102,7 +102,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;
     }
-    .mp-product-item .product-desc {
+    .product-item .product-desc {
         padding-right: 1.4rem;
         color: #616161;
         font-size: .24rem;

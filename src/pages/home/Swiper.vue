@@ -47,7 +47,7 @@
           autoHeight: true,
           pagination:'.swiper-pagination',
           bulletClass : 'my-bullet',
-          bulletActiveClass: 'bullet-active',
+          bulletActiveClass: 'my-bullet-active',
           observeParents: true,
           }
         }
@@ -79,8 +79,8 @@
         border-radius:50%;
         margin-left:.08rem;
     }
-    .bullet-active{
-        background:#fff!important;
+    .my-bullet-active{
+        background:#fff;
     }
 
 </style>
