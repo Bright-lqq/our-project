@@ -185,10 +185,10 @@
     }
     .swipe-wrap {
         overflow: visible;
-        width: 828px;
+        width: 100%;
     }
     .swipe-item {
-        width: 414px;
+        width: 100%;
         left: 0px;
         transition-duration: 300ms;
         transform: translate(0px, 0px) translateZ(0px);
