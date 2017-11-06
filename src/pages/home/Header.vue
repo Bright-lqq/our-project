@@ -8,9 +8,9 @@
      输入城市/景点/游玩主题
     </div>
     <div class="mp-header-right" mp-role="right">
-      <a href="/touch/toNewCityList.htm" title="城市选择" class="mp-linkarea">
-      北京
-      </a>
+        <a href="/touch/toNewCityList.htm" title="城市选择" class="mp-linkarea">
+        北京
+        </a>
 
     </div>
     <span class="triangle_border_down"></span>

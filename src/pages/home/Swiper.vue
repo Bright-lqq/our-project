@@ -2,9 +2,11 @@
   <swiper :options="swiperOption">
     <!-- slides -->
     <swiper-slide>
+    
         <div class="swiper-img-con">
              <img class="swiper-img" src="http://img1.qunarzz.com/piao/fusion/1710/16/1d7693c6bd8abd02.png_640x200_43c308dd.png" />
         </div>
+   
     </swiper-slide>
     <swiper-slide>
         <div class="swiper-img-con">
