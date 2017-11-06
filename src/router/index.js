@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/home/Home'
 import Suggest from '@/pages/suggest/Suggest'
+import List from '@/pages/list/List'
+
 
 Vue.use(Router)
 
@@ -15,6 +17,10 @@ export default new Router({
 			path: '/suggest',
 			name: 'suggest',
 			component: Suggest
-		}
+		},{
+	        path: '/list',
+	        name: 'List',
+	        component: List
+	    }
 	]
 })
