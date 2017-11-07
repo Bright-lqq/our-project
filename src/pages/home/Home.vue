@@ -41,7 +41,9 @@
 		}),
 
 		mounted() {
-			this.getHomeData()
+			!this.swiperInfo.length && this.getHomeData();
+			!this.weekendInfo.length && this.getHomeData();
+			
 		},
 
 		methods: mapActions({
