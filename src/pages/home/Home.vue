@@ -6,7 +6,7 @@
 		<index-iconswiper />
 		<index-activity />
 		<index-hotlist />
-		<index-weekendlist />
+		<index-weekendlist :weekendInfo = "weekendInfo" />
 	</div>
 </template>
 
@@ -34,11 +34,14 @@
 		computed: mapState({
 			swiperInfo: (state) => {
 				return state.home.swiperInfo
+			},
+			weekendInfo: (state) => {
+				return state.home.weekendInfo
 			}
 		}),
 
 		mounted() {
-			!this.swiperInfo.length && this.getHomeData()
+			this.getHomeData()
 		},
 
 		methods: mapActions({

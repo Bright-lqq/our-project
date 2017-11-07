@@ -22,7 +22,7 @@
                     autoplay: 3000,
                     direction: 'horizontal',
                     autoHeight: true,
-                    pagination:'.swiper-pagination',
+                    pagination:'.home-swiper-pagination',
                     bulletClass : 'home-swiper-bullet',
                     bulletActiveClass: 'home-swiper-bullet-active',
                     observeParents: true
@@ -36,17 +36,14 @@
         }
     }
 </script>
+
 <style>
-    .home-swiper {
-        width: 100%;
-        height: 0;
-        padding-bottom: 31.25%;
-    }
-    .home-swiper-img-con {
-        width: 100%;
-    }
+
     .home-swiper-pagination {
+        position: absolute;
         height: .2rem;
+        z-index: 2;
+        text-align: center;
     }
     .home-swiper-bullet {
         display: inline-block;
@@ -59,4 +56,16 @@
     .home-swiper-bullet-active {
         background: #fff;
     }
+</style>
+
+<style scoped>
+    .home-swiper {
+        width: 100%;
+        height: 0;
+        padding-bottom: 31.25%;
+    }
+    .home-swiper-img-con {
+        width: 100%;
+    }
+    
 </style>

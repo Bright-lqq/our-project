@@ -2,16 +2,18 @@
     <div class = "hot_list">
         <h2 class = "hot_nav">热销推荐</h2>
         <div class = "hot_content">
-            <ul class = "hotList">
-                <li class = "hot_gugong" v-for = "list in lists" :key = "list.id">
-                    <img class = "hot_img" :src="list.img" alt="">
-                    <div class = "hot_center">
-                         <h3 class = "hot_title">{{list.title}}</h3>
-                         <h4 class = "hot_introduce">{{list.introduce}}</h4>
-                         <div class="hot-price">¥<em class="hot_num">{{list.num}}</em><span class="hot-text">起</span></div>
-                    </div>
-                </li>
-            </ul>
+            <router-link to="../detail">
+                <ul class = "hotList">
+                    <li class = "hot_gugong" v-for = "list in lists" :key = "list.id">
+                        <img class = "hot_img" :src="list.img" alt="">
+                        <div class = "hot_center">
+                            <h3 class = "hot_title">{{list.title}}</h3>
+                            <h4 class = "hot_introduce">{{list.introduce}}</h4>
+                            <div class="hot-price">¥<em class="hot_num">{{list.num}}</em><span class="hot-text">起</span></div>
+                        </div>
+                    </li>
+                </ul>
+            </router-link>
             <div class = "hot_more">
                 <a href="">查看所有产品</a>
             </div>
