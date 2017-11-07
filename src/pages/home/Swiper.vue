@@ -12,9 +12,11 @@
         </div>
     </swiper-slide>
      <swiper-slide>
-         <div class="swiper-img-con">
-             <img class="swiper-img" src="http://img1.qunarzz.com/piao/fusion/1710/f5/57137c621d75ba02.jpg_640x200_b984ddf7.jpg" />
-        </div>
+        <router-link to="/activity">
+            <div class="swiper-img-con">
+                <img class="swiper-img" src="http://img1.qunarzz.com/piao/fusion/1710/f5/57137c621d75ba02.jpg_640x200_b984ddf7.jpg" />
+            </div>
+        </router-link>
     </swiper-slide>
      <swiper-slide>
          <div class="swiper-img-con">
