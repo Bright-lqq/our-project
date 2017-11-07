@@ -1,12 +1,12 @@
 <template>
-      <index-header />
+      <list-header />
 </template>
 
 <script>
   import header from "./Header.vue";
   export default {
     components: {
-      "index-header": header,
+      "list-header": header,
     }
   }
 </script>

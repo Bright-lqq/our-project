@@ -6,12 +6,12 @@
                 <div class="swipe-wrap">
                     <div class="swipe-item">
                         <div class="category-item" v-for="list in pageone" :key="list.id">
-                            <a>
+                            <router-link to="../list">
                                 <div class="category-img-container">
                                     <img :src="list.src">
                                 </div>
                                 <div class="keywords">{{list.title}}</div>
-                            </a>
+                            </router-link>
                         </div>
                     </div>
                 </div>
@@ -22,12 +22,12 @@
                 <div class="swipe-wrap">
                     <div class="swipe-item" >
                         <div class="category-item" v-for="list in pagetwo" :key="list.id">
-                            <a>
+                            <router-link to="../list">
                                 <div class="category-img-container">
                                     <img :src="list.src">
                                 </div>
                                 <div class="keywords">{{list.title}}</div>
-                            </a>
+                            </router-link>
                         </div>
                     </div>
                 </div>

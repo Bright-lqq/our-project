@@ -5,7 +5,7 @@
 		<index-swiper :swiperInfo = "swiperInfo" />
 		<index-iconswiper />
 		<index-activity />
-		<index-hotlist />
+		<index-hotlist :hostInfo = "hostInfo" />
 		<index-weekendlist />
 	</div>
 </template>
@@ -34,7 +34,11 @@
 		computed: mapState({
 			swiperInfo: (state) => {
 				return state.home.swiperInfo
-			}
+			},
+			hostInfo: (state) => {
+				return state.home.hostInfo
+			},
+
 		}),
 
 		mounted() {

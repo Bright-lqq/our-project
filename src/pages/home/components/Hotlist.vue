@@ -3,7 +3,7 @@
         <h2 class = "hot_nav">热销推荐</h2>
         <div class = "hot_content">
             <ul class = "hotList">
-                <li class = "hot_gugong" v-for = "list in lists" :key = "list.id">
+                <li class = "hot_gugong" v-for = "list in hostInfo" :key = "list.id">
                     <img class = "hot_img" :src="list.img" alt="">
                     <div class = "hot_center">
                          <h3 class = "hot_title">{{list.title}}</h3>
@@ -21,41 +21,7 @@
 
 <script>
     export default {
-        data() {
-            return {
-                lists:[{
-                    id: 1,
-                    img: "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
-                    title: "故宫",
-                    introduce: "东方宫殿建筑代表，世界宫殿建筑典范",
-                    num: "65"
-                },{
-                    id: 2,
-                    img: "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_140x140_97813766.jpg",
-                    title: "八达岭长城",
-                    introduce: "不到长城非好汉",
-                    num: "25"
-                },{
-                    id: 3,
-                    img: "http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_140x140_e20be8e0.jpg",
-                    title: "颐和园",
-                    introduce: "保存完整的一座皇家行宫御苑",
-                    num: "1"
-                },{
-                    id: 4,
-                    img: "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_140x140_b05eb1df.jpg",
-                    title: "北京欢乐谷",
-                    introduce: "七大主题园区带你畅享北京欢乐谷",
-                    num: "65"
-                },{
-                    id: 5,
-                    img: "http://img1.qunarzz.com/sight/p0/1708/2b/2b6378fd3b2e1d86a3.img.jpg_140x140_eae81520.jpg",
-                    title: "慕田峪长城",
-                    introduce: "秀美长城，关键是人少",
-                    num: "65"
-                }]
-            }
-        }
+        props:[ "hostInfo" ],
     }
 </script>
 
