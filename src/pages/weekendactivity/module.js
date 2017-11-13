@@ -12,7 +12,7 @@ export default {
 	},
 	actions: {
 		[AJAX_GET_DATA](context) {
-			axios.get('/static/activity.json')
+			axios.get('/static/weekendactivity.json')
 				.then((response) => {
 					context.commit(SET_DATA, response.data.data.activityInfo);
 				})

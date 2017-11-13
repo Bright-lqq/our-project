@@ -6,7 +6,7 @@
 		<index-iconswiper :iconswiper = "iconswiper" />
 		<index-activity />
 		<index-hotlist :hostInfo = "hostInfo" />
-		<index-weekendlist />
+		<index-weekendlist :weekendInfo = "weekendInfo" />
 	</div>
 </template>
 
@@ -40,12 +40,16 @@
 			},
 			hostInfo: (state) => {
 				return state.home.hostInfo
+			},
+			weekendInfo: (state) => {
+				return state.home.weekendInfo
 			}
 		}),
 
 		mounted() {
 			this.getHomeData()
 		},
+		
 		methods: mapActions({
 			getHomeData: (dispatch) => {
 				dispatch(AJAX_GET_DATA)
@@ -53,3 +57,4 @@
 		})
 	}
 </script>
+

@@ -5,13 +5,16 @@ export default {
 	state: {
 		swiperInfo: [],
 		iconswiper: [],
-		hostInfo: []
+		hostInfo: [],
+		weekendInfo: []
 	},
+	
 	mutations: {
 		[SET_DATA](state, payload) {
 			state.swiperInfo = payload.swiperInfo;
 			state.iconswiper = payload.iconswiper;
 			state.hostInfo = payload.hostInfo;
+			state.weekendInfo = payload.weekendInfo;
 		}
 	},
 	

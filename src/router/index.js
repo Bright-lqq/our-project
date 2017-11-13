@@ -1,20 +1,28 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+<<<<<<< HEAD
 import Activity from '@/pages/activity/Activity'
 import Home from '@/pages/home/Home'
 import Suggest from '@/pages/suggest/Suggest'
 import List from '@/pages/list/List'
 import Tour from '@/pages/tour/Tour'
+import Detail from '@/pages/Detail/Detail'
+import Weekendactivity from '@/pages/weekendactivity/Weekendactivity'
 
 Vue.use(Router)
 
 export default new Router({
+
 	routes: [
-		{
-			path: '/',
-			name: 'home',
+	    {
+	    	path: '/',
+			name: 'Home',
 			component: Home
 		},{
+			path: '/detail',
+			name: 'Detail',
+			component: Detail
+	    },{
 			path: '/suggest',
 			name: 'suggest',
 			component: Suggest
@@ -30,6 +38,10 @@ export default new Router({
 			path: '/activity',
 			name: 'activity',
 			component: Activity
-    	}
+    	},{
+			path: '/weekendactivity',
+			name: 'Weekendactivity',
+			component: Weekendactivity
+		}
 	]
 })
