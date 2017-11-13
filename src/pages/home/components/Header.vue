@@ -13,7 +13,6 @@
 			<a href="/touch/toNewCityList.htm" title="城市选择" class="mp-linkarea">
 			北京
 			</a>
-
 		</div>
 		<span class="triangle_border_down"></span>
 	</header>

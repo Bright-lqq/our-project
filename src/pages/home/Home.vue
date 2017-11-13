@@ -42,7 +42,8 @@
 		}),
 
 		mounted() {
-			!this.swiperInfo.length && this.getHomeData()
+			!this.swiperInfo.length && this.getHomeData(),
+			!this.hostInfo.length && this.getHomeData()
 		},
 
 		methods: mapActions({

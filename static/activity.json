@@ -1,0 +1,36 @@
+{
+	"ret":true,
+	"data":{
+		"activityInfo":[{
+			"id":1,
+			"src":"http://img1.qunarzz.com/sight/p0/1411/43/dea8b51719a4a69b68777baa68c146e4.water.jpg_640x276_775c187f.jpg",
+			"name":"春晖园温泉度假村",
+			"desc":"北京高端温泉，近年价格越来越亲民",
+			"num":112
+		},{
+			"id":2,
+			"src":"http://img1.qunarzz.com/sight/p0/1608/cd/cdf33f046a958873a3.water.jpg_640x276_2fe01205.jpg",
+			"name":"小汤山温泉度假区",
+			"desc":"景色宜人，环境舒适",
+			"num":65
+		},{
+			"id":3,
+			"src":"http://img1.qunarzz.com/sight/p0/1703/27/276f941db3912ce7a3.img.jpg_640x276_9da65b89.jpg",
+			"name":"郁金香摩锐温泉水世界",
+			"desc":"北方夏威夷，豪华游乐场",
+			"num":50
+		},{
+			"id":4,
+			"src":"http://img1.qunarzz.com/sight/p0/1511/6c/6cb26acc8bba843490.water.jpg_640x276_620a47a8.jpg",
+			"name":"龙脉温泉",
+			"desc":"中国温泉之乡给你“帝王”的享受",
+			"num":149
+		},{
+			"id":5,
+			"src":"http://img1.qunarzz.com/sight/p0/1510/8e/8eea8eb6f41698290.img.jpg_640x276_dc899e2f.jpg",
+			"name":"金隅凤山温泉",
+			"desc":"在温泉汤池中增添独享欢乐的私密空间",
+			"num":248
+		}]
+	}
+}

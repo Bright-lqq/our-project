@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <a class="header-left" >
+        <a class="header-left" href = "">
             <i class="iconfont icon-return"></i>
         </a>
         <input class = "header-input" />
