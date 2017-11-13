@@ -18,7 +18,7 @@
     },
     computed: mapState({
       activityInfo: (state) => {
-        return state.activity.activityInfo
+        return state.weekendactivity.activityInfo
       },
     }),
     mounted() {

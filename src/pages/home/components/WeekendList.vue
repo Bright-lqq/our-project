@@ -2,7 +2,7 @@
     <div class="lazy-load" id="weekend-trip">
         <h2 class="modtitle">周末去哪儿</h2>
             <div>
-                <router-link to="../activity">
+                <router-link to="../weekendactivity">
                     <div class="product-item" v-for="list in weekendInfo" :key="list.id">
                         <a href="#" class="fulllink">
                             <div class="product-imgcontainer image-ready">

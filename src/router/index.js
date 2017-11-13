@@ -4,7 +4,7 @@ import Home from '@/pages/Home/Home'
 import Detail from '@/pages/Detail/Detail'
 import Suggest from '@/pages/suggest/Suggest'
 import List from '@/pages/list/List'
-import Activity from '@/pages/activity/Activity'
+import Weekendactivity from '@/pages/weekendactivity/Weekendactivity'
 
 Vue.use(Router)
 
@@ -28,9 +28,9 @@ export default new Router({
 			name: 'List',
 			component: List
 		},{
-			path: '/activity',
-			name: 'Activity',
-			component: Activity
+			path: '/weekendactivity',
+			name: 'Weekendactivity',
+			component: Weekendactivity
 		}
 	]
 })
