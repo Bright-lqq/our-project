@@ -109,295 +109,293 @@
 </script>
 
 <style scoped>
-   .list-box {
-   		width: 6.4rem;
-   		height: 42rem;
-      background: #fff;
-   }
-   .list-filter {
-   		height: .8rem;
-	    background-color: #fff;
-	    width: 100%;
-      border-top:0;
-   }
-   .list-filter .list-select:first-child {
-   		border-right:0;
-   }
-   .list-filter .list-select {
-   		display: block;
-   		box-sizing: border-box;
-   }
-   .list-select {
-   		width: 3.2rem;
-   		height: .8rem;
-	    position: relative;
-	    color: #212121;
-	    line-height: .8rem;
-	    text-align: center;
-	    white-space: nowrap;
-	    text-overflow: ellipsis;
-      float: left;
-      border: 1px solid #ccc;
-      border-bottom: 0;
-   }
-   .list-select-caption {
-      position: relative;
-      display: block;
-      width: 100%;
-      height: .8rem;
-      color: #212121;
-      line-height: .8rem;
-      text-align: center;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      box-sizing: border-box;   
-   }
-   .list-select-firstcaption {
-      position: relative;
-      top:-39px;
-      left:0;
-      display: none;
-      width: 100%;
-      height: .8rem;
-      color: #00afc7;
-      line-height: .8rem;
-      text-align: center;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      box-sizing: border-box;  
-   }
-   .triangle_border_down {
-      position:absolute;
-      right:22%;
-      top:45%;
-      display: block;
-      border-width:5px 5px 0;
-      border-style:solid;
-      border-color:#000 transparent transparent;
-    }
-    .triangle_border_up {
-      vertical-align: top;  
-      background-color: rgb(255, 255, 255);
-      border-bottom: 5px solid #00afc7;  
-      border-right: 5px solid transparent;  
-      border-left: 5px solid transparent;</span>  
-      content: "";  
-      position:absolute;
-      right:22%;
-      top:45%;
-    }
-    .list-ticketCon {
-      height: 38rem;
-    }
-    .list-ticketCon-group {
-      height: 3.8rem;
-      border:1px solid #ccc;
-      margin-bottom: .2rem;
-      background: #fff;
-    }
-    .list-ticketCon-info {
-      width: 6rem;
-      height: 1.98rem;
-      border-bottom: .02rem dashed #ccc;
-      margin-left: .2rem;
-    }
-    .list-ticketCon-imgcon {
-      position: relative;
-      top: .2rem;
-      width: 1.6rem;
-      height: 1.6rem;
-      float: left;
-    }
-    .list-ticketCon-picture {
-      width: 1.6rem;
-      height: 1.6rem;
-    }
-    .list-ticketCon-detail {
-      position: relative;
-      top: .2rem;
-      left: .2rem;
-      overflow: hidden;
-      float: right;
-      width: 4.4rem;
-      height: 1.6rem;
-
-    }
-    .list-ticketCon-name {
-      float: left;
-      overflow: hidden;
-      max-width: 60%;
-      color: #212121;
-      font-size: .32rem;
-      line-height: .36rem;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-    .list-ticketCon-word {
-      display: inline-block;
-      margin-left: .06rem;
-      width: .3rem;
-      height: .3rem;
-      background: #ff1200;
-      color: #fff;
-      font-size: .24rem;
-      line-height: .3rem;
-      text-align: center;
-    }
-    .list-ticketCon-price {
-      position: relative;
-      left: 1.2rem;
-      top:0;
-      height: .36rem;
-      color: #ff8300;
-      font-size: .36rem;
-    }
-    .list-ticketCon-text {
-      color: #9e9e9e;
-      font-size: .2rem;
-    }
-    .list-ticketCon-comments {
-      margin-top: .38rem;
-      height: .64rem;
-      line-height: .64rem;
-    }
-    .icon-wuxing {
-      display: inline-block;
-      position: relative;
-      width: 1.2rem;
-      height: .24rem;
-      font-size: .24rem;
-      color: #00afc7;
-    }
-    .list-ticketCon-totalnum {
-      position: relative;
-      margin-left: .06rem;
-      color: #9e9e9e;
-      font-size: .24rem;
-    }
-    .list-ticketCon-location {
-      position: absolute;
-      bottom: 0;
-      color: #9e9e9e;
-      font-size: 0;
-      white-space: nowrap;
-    }
-    .list-ticketCon-address {
-      font-size: .24rem;
-    }
-    .list-ticketCon-item {
-      position: relative;
-      height: .88rem;
-      margin: 0 .2rem;
-      border-bottom: .02rem dashed #ccc;
-    }
-    .list-ticketCon-adult {
-      overflow: hidden;
-      margin-right: 1.2rem;
-      width: 4.8rem;
-      height: .88rem;
-      color: #212121;
-      font-size: .28rem;
-      line-height: .9rem;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-    .list-ticketCon-qunarprice {
-      overflow: hidden;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 1.2rem;
-      height: .9rem;
-      color: #ff8300;
-      font-size: .2rem;
-      line-height: .9rem;
-      text-align: right;
-    }
-    .list-ticketCon-number {
-      font-size: .36rem;
-    }
-    .list-submenu {
-      position: absolute;
-      z-index: 1;
-      width: 6.4rem;
-      height: 4.8rem;
-      overflow: hidden;
-    }
-    .list-submenu-left {
-      width: 6.4rem;
-      height: 4.8rem;
-     
-    }
-    .list-submenu-all {
-      width: 3.2rem;
-      float: left;
-      height: 4.8rem;
-      overflow-y: scroll; 
-    }
-    .list-submenu-all::-webkit-scrollbar {
-    display: none;
-    }
-    .list-submenu-classification {
-      text-align: left;
-      font-size: .24rem;
-      padding-left: .3rem;
-      line-height: .8rem;
-      height: .78rem;
-      overflow: hidden;
-      color: #212121;
-      width: 2.9rem;
-      border-top: 1px solid #ccc;
-      background: #fff;
-    }
-    .list-submenu-icon {
-      width: .3rem;
-      height: .3rem;
-      vertical-align: middle;
-      margin-right: .1rem;
-    }
-    .list-submenu-num {
-      float: right;
-      margin-right: .4rem;
-      font-size: .24rem;
-      color: #9e9e9e;
-    }
-    .list-submenu-scenicspot {
-      position: absolute;
-      top: 0;
-      left: 3.2rem;
-      z-index: 1;
-      width: 3.2rem;
-      height: 4.8rem;
-      background: #f1f1f1;
-      float: right;
-      overflow-y: scroll; 
-    }
-     .list-submenu-scenicspot::-webkit-scrollbar {
-      display: none;
-    }
-    .list-submenu-item {
-      padding-left: .3rem;
-      line-height: .8rem;
-      height: .8rem;
-      overflow: hidden;
-      color: #212121;
-      text-align: left;
-      font-size: .24rem;
-    }
-    .list-select-caption-center {
-      position: absolute;
-      top: .8rem;
-      right: 0;
-      width: 6.4rem;
-      height: 2.4rem;
-      background: red;
-      z-index: 1;
-    }
-    .list-select-caption-title {
-      background: #fff;
-      border-bottom: 1px solid #ccc;
-    }
-    .caption {
-      color: #00afc7;
-    }
+.list-box {
+  width: 6.4rem;
+  height: 42rem;
+  background: #fff;
+}
+.list-filter {
+  height: .8rem;
+  background-color: #fff;
+  width: 100%;
+  border-top:0;
+}
+.list-filter .list-select:first-child {
+  border-right:0;
+}
+.list-filter .list-select {
+  display: block;
+  box-sizing: border-box;
+}
+.list-select {
+  width: 3.2rem;
+  height: .8rem;
+  position: relative;
+  color: #212121;
+  line-height: .8rem;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+}
+.list-select-caption {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: .8rem;
+  color: #212121;
+  line-height: .8rem;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;   
+}
+.list-select-firstcaption {
+  position: relative;
+  top:-39px;
+  left:0;
+  display: none;
+  width: 100%;
+  height: .8rem;
+  color: #00afc7;
+  line-height: .8rem;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;  
+}
+.triangle_border_down {
+  position:absolute;
+  right:22%;
+  top:45%;
+  display: block;
+  border-width:5px 5px 0;
+  border-style:solid;
+  border-color:#000 transparent transparent;
+}
+.triangle_border_up {
+  vertical-align: top;  
+  background-color: rgb(255, 255, 255);
+  border-bottom: 5px solid #00afc7;  
+  border-right: 5px solid transparent;  
+  border-left: 5px solid transparent;</span>  
+  content: "";  
+  position:absolute;
+  right:22%;
+  top:45%;
+}
+.list-ticketCon {
+  height: 38rem;
+}
+.list-ticketCon-group {
+  height: 3.8rem;
+  border:1px solid #ccc;
+  margin-bottom: .2rem;
+  background: #fff;
+}
+.list-ticketCon-info {
+  width: 6rem;
+  height: 1.98rem;
+  border-bottom: .02rem dashed #ccc;
+  margin-left: .2rem;
+}
+.list-ticketCon-imgcon {
+  position: relative;
+  top: .2rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  float: left;
+}
+.list-ticketCon-picture {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.list-ticketCon-detail {
+  position: relative;
+  top: .2rem;
+  left: .2rem;
+  overflow: hidden;
+  float: right;
+  width: 4.4rem;
+  height: 1.6rem;
+}
+.list-ticketCon-name {
+  float: left;
+  overflow: hidden;
+  max-width: 60%;
+  color: #212121;
+  font-size: .32rem;
+  line-height: .36rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list-ticketCon-word {
+  display: inline-block;
+  margin-left: .06rem;
+  width: .3rem;
+  height: .3rem;
+  background: #ff1200;
+  color: #fff;
+  font-size: .24rem;
+  line-height: .3rem;
+  text-align: center;
+}
+.list-ticketCon-price {
+  position: relative;
+  left: 1.2rem;
+  top:0;
+  height: .36rem;
+  color: #ff8300;
+  font-size: .36rem;
+}
+.list-ticketCon-text {
+  color: #9e9e9e;
+  font-size: .2rem;
+}
+.list-ticketCon-comments {
+  margin-top: .38rem;
+  height: .64rem;
+  line-height: .64rem;
+}
+.icon-wuxing {
+  display: inline-block;
+  position: relative;
+  width: 1.2rem;
+  height: .24rem;
+  font-size: .24rem;
+  color: #00afc7;
+}
+.list-ticketCon-totalnum {
+  position: relative;
+  margin-left: .06rem;
+  color: #9e9e9e;
+  font-size: .24rem;
+}
+.list-ticketCon-location {
+  position: absolute;
+  bottom: 0;
+  color: #9e9e9e;
+  font-size: 0;
+  white-space: nowrap;
+}
+.list-ticketCon-address {
+  font-size: .24rem;
+}
+.list-ticketCon-item {
+  position: relative;
+  height: .88rem;
+  margin: 0 .2rem;
+  border-bottom: .02rem dashed #ccc;
+}
+.list-ticketCon-adult {
+  overflow: hidden;
+  margin-right: 1.2rem;
+  width: 4.8rem;
+  height: .88rem;
+  color: #212121;
+  font-size: .28rem;
+  line-height: .9rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list-ticketCon-qunarprice {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.2rem;
+  height: .9rem;
+  color: #ff8300;
+  font-size: .2rem;
+  line-height: .9rem;
+  text-align: right;
+}
+.list-ticketCon-number {
+  font-size: .36rem;
+}
+.list-submenu {
+  position: absolute;
+  z-index: 1;
+  width: 6.4rem;
+  height: 4.8rem;
+  overflow: hidden;
+}
+.list-submenu-left {
+  width: 6.4rem;
+  height: 4.8rem;
+}
+.list-submenu-all {
+  width: 3.2rem;
+  float: left;
+  height: 4.8rem;
+  overflow-y: scroll; 
+}
+.list-submenu-all::-webkit-scrollbar {
+  display: none;
+}
+.list-submenu-classification {
+  text-align: left;
+  font-size: .24rem;
+  padding-left: .3rem;
+  line-height: .8rem;
+  height: .78rem;
+  overflow: hidden;
+  color: #212121;
+  width: 2.9rem;
+  border-top: 1px solid #ccc;
+  background: #fff;
+}
+.list-submenu-icon {
+  width: .3rem;
+  height: .3rem;
+  vertical-align: middle;
+  margin-right: .1rem;
+}
+.list-submenu-num {
+  float: right;
+  margin-right: .4rem;
+  font-size: .24rem;
+  color: #9e9e9e;
+}
+.list-submenu-scenicspot {
+  position: absolute;
+  top: 0;
+  left: 3.2rem;
+  z-index: 1;
+  width: 3.2rem;
+  height: 4.8rem;
+  background: #f1f1f1;
+  float: right;
+  overflow-y: scroll; 
+}
+.list-submenu-scenicspot::-webkit-scrollbar {
+  display: none;
+}
+.list-submenu-item {
+  padding-left: .3rem;
+  line-height: .8rem;
+  height: .8rem;
+  overflow: hidden;
+  color: #212121;
+  text-align: left;
+  font-size: .24rem;
+}
+.list-select-caption-center {
+  position: absolute;
+  top: .8rem;
+  right: 0;
+  width: 6.4rem;
+  height: 2.4rem;
+  background: red;
+  z-index: 1;
+}
+.list-select-caption-title {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.caption {
+  color: #00afc7;
+}
 </style>
