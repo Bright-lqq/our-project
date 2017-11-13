@@ -46,11 +46,5 @@
 				dispatch(AJAX_GET_DATA)
 			}
 		})
-
-		
 	}
 </script>
-
-<style scoped>
-
-</style>

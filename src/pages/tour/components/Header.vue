@@ -5,18 +5,12 @@
 				<i class="iconfont icon-return"></i>
 			</a>
 		</router-link>
-		<input class="tour-header-title" placeholder="输入城市或景点" />
+		<input class="tour-header-title" placeholder="一日游" />
 		<div class="tour-header-right">
 			<a class="tour-header-search">搜索</a>
 		</div>
 	</header>
 </template>
-
-<script>
-	
-
-
-</script>
 
 <style scoped>
 	.tour-header {
@@ -59,6 +53,4 @@
 	.tour-header-search {
 		color: #fff;
 	}
-	
-	
 </style>

@@ -14,18 +14,18 @@ export default new Router({
 			path: '/',
 			name: 'home',
 			component: Home
-		}, {
+		},{
 			path: '/suggest',
 			name: 'suggest',
 			component: Suggest
 		},{
-	        path: '/list',
-	        name: 'List',
-	        component: List
-	    },{
-	        path: '/tour',
-	        name: 'tour',
-	        component: Tour
-	    }
+			path: '/list',
+			name: 'List',
+			component: List
+		},{
+			path: '/tour',
+			name: 'tour',
+			component: Tour
+		}
 	]
 })

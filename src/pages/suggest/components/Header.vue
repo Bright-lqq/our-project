@@ -108,5 +108,4 @@ export default {
 		z-index: 3;
 		box-shadow: 0 2px 6px 0 #c9cccd; 
 	}
-	
 </style>

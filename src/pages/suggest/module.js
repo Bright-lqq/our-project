@@ -34,7 +34,6 @@ export default {
 		},
 
 		[ADD_LIST]({commit}, res) {
-			// console.log(res+"     moudle")
 			commit(ADD_LIST_DATA, res)
 		}
 	}

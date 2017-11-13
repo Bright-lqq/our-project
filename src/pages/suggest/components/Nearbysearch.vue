@@ -7,7 +7,6 @@
 
 </template>
 
-
 <style>
 	.nearby-search {
 		padding: .2rem;

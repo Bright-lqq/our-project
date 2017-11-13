@@ -62,7 +62,6 @@
 			...mapActions({
 		    	handleClearClick: function(dispatch, res){
 		    		dispatch(ADD_LIST, res)
-		    		// console.log(res)
 		    	}
 	    	}),
 	    	handleChangeClick() {
@@ -191,7 +190,4 @@
 		height: .9rem;
 		z-index: 1;
 	}
-
-
-
 </style>

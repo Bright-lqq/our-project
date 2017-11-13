@@ -98,6 +98,4 @@
 		font-size: .26rem;
 		color: #333;
 	}
-
-
 </style>
