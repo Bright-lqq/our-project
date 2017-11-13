@@ -3,7 +3,7 @@
 		<div>{{$store.state.name}}</div>
 		<index-header />
 		<index-swiper :swiperInfo = "swiperInfo" />
-		<index-iconswiper />
+		<index-iconswiper iconswiper = "iconswiper" />
 		<index-activity />
 		<index-hotlist />
 		<index-weekendlist />
@@ -17,9 +17,9 @@
 	import activity from './components/Activity'
 	import hotlist from './components/Hotlist'
 	import weekendlist from './components/WeekendList'
-	import axios from 'axios'
 	import { AJAX_GET_DATA } from './types.js'
 	import { mapState, mapActions } from 'vuex'
+	import axios from 'axios'
 
 	export default {
 		components: {
@@ -34,11 +34,14 @@
 		computed: mapState({
 			swiperInfo: (state) => {
 				return state.home.swiperInfo
+			},
+			iconswiper: (state) => {
+				return state.home.iconswiper
 			}
 		}),
 
 		mounted() {
-			!this.swiperInfo.length && this.getHomeData()
+			this.getHomeData()
 		},
 
 		methods: mapActions({
