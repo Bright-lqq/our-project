@@ -1,0 +1,310 @@
+{
+	"ret": true,
+	"data": {
+		"activityInfo": [
+			{
+				"id": 1,
+				"title": "超值温泉"
+			},{
+				"id": 2,
+				"title": "山水温泉"
+			},{
+				"id": 3,
+				"title": "养生温泉"
+			},{
+				"id": 4,
+				"title": "亲子温泉"
+			},{
+				"id": 5,
+				"title": "省心一日游"
+			},{
+				"id": 6,
+				"title": "温泉贴士"
+            }
+		],
+		"landscapeInfo": [
+			{
+				"id": 1,
+				"imgUrl": "//img1.qunarzz.com/sight/p0/1411/43/dea8b51719a4a69b68777baa68c146e4.water.jpg_600x237_3c8b55d2.jpg",
+				"title": "春晖园温泉度假村",
+				"characteristic1": "私汤",
+				"characteristic2": "景色优美",
+				"characteristic3": "SPA",
+				"price": "113",
+				"comment": "j*7：服务态度超级好，设施很齐全，什么都有，团购价格很合理，这是一次超级好的温泉度假，下次还会来这里！"
+			},{
+				"id": 2,
+				"imgUrl": "//img1.qunarzz.com/sight/p0/1507/d5/a9c70a3b26bd90e2e9274eae72ae6727.water.jpg_600x237_f2a6382e.jpg",
+				"title": "九华山庄温泉主题公园",
+				"characteristic1": "泥灸",
+				"characteristic2": "泳池",
+				"characteristic3": "环境好",
+				"price": "115",
+				"comment": "c*3：取票方便，环境很好，室内外各有一个游泳池，室外的水深1.6米，室内水深1.8米。个人感觉室外游的比较舒服。"
+			},{
+				"id": 3,
+				"imgUrl": "//img1.qunarzz.com/piao/fusion/1710/be/d25057d66da24d02.jpg_600x237_d65ad838.jpg",
+				"title": "静之湖温泉",
+				"characteristic1": "VIP私宅",
+				"characteristic2": "餐饮",
+				"price": "113",
+				"comment": "j*8：温泉池室内室外都有，玫瑰、薰衣草、芦荟、啤酒、牛奶，各种功能的汤池任你选择，孩子的浅池里还有海洋球可以玩。泡完还有香薰屋、盐浴可以休息。"
+			},{
+				"id": 4,
+				"imgUrl": "//img1.qunarzz.com/sight/p0/1510/3a/3afa277c0f0bd43790.img.jpg_600x237_5256f5da.jpg",
+				"title": "瑞麟湾温泉",
+				"characteristic1": "住宿",
+				"characteristic2": "私汤",
+				"characteristic3": "SPA",
+				"price": "138",
+				"comment": "w*4：价格很给力，我们定的住宿+温泉，性价比还不错，主要是私密性比较好，私汤感觉更干净卫生些。"
+			}
+		],
+		"healthInfo": [
+			{
+				"id": 1,
+				"imgUrl": "//img1.qunarzz.com/piao/fusion/1710/c0/713852790f86e002.jpg_600x237_9af43732.jpg",
+				"title": "顺景温泉",
+				"characteristic1": "养生餐",
+				"characteristic2": "泳池",
+				"characteristic3": "酒吧",
+				"price": "427",
+				"comment": "C*2：真的很不错！温度适宜，水温很热，水很干净，景色也不错，服务很好，很适合带孩子去玩，一次很愉快的出行，全家都很开心！"
+			},{
+				"id": 2,
+				"imgUrl": "//img1.qunarzz.com/sight/p0/1510/20/2048e6567ed9f6ea90.img.jpg_600x237_dabe4d2c.jpg",
+				"title": "北京华清温泉",
+				"characteristic1": "环境赞",
+				"characteristic2": "室内外",
+				"characteristic3": "服务好",
+				"price": "83",
+				"comment": "w*2：服务很好，很一流，环境不错，推荐附近的朋友过来。"
+			},{
+				"id": 3,
+				"imgUrl": "//img1.qunarzz.com/sight/p0/1503/dc/dc651cd2e01fb900.img.jpg_600x237_c6d65aea.jpg",
+				"title": "南宫温泉水世界",
+				"characteristic1": "住宿",
+				"characteristic2": "儿童乐园",
+				"characteristic3": "水上项目",
+				"price": "55",
+				"comment": "a*9：一家子去的，孩子特别开心，在里面一玩儿就是4个小时，回来的时候说没玩儿够。"
+			},{
+				"id": 4,
+				"imgUrl": "//img1.qunarzz.com/sight/p0/1507/7b/4015f44fab493e4c84c97c6ec258feb3.water.jpg_600x237_30d25153.jpg",
+				"title": "南宫旅游景区",
+				"characteristic1": "风景美",
+				"characteristic2": "养生膳食",
+				"characteristic3": "设备齐全",
+				"price": "120",
+				"comment": "n*0：挺大的，室内馆有两层，还有室外馆。风景很美，热带植物很多，水都是恒温的，也挺干净。餐厅提供免费的茶水、水果和饼干，很开心。"
+			}
+		],
+		"parentchildInfo": [
+			{
+				"id": 1,
+				"imgUrl": "//img1.qunarzz.com/sight/p0/1611/96/96c7b547622c8334a3.img.jpg_600x237_9b5ee718.jpg",
+				"title": "西山温泉",
+				"characteristic1": "娱乐设施",
+				"characteristic2": "儿童乐园",
+				"characteristic3": "服务一流",
+				"price": "218",
+				"comment": "d*7：强烈推荐藏药温泉。藏医先把脉，然后指定泡池半个小时内，汗立马被蒸出，很舒服。整体环境布局都很有西藏特色，服务人员也全是西藏本土的帅男靓女。"
+			},{
+				"id": 2,
+				"imgUrl": "//img1.qunarzz.com/piao/fusion/1710/39/4eefca0fc28ce802.jpg_600x237_4d477d75.jpg",
+				"title": "温都水城",
+				"characteristic1": "鱼疗",
+				"characteristic2": "汗蒸",
+				"price": "128",
+				"comment": "x*2：场地很大，有个大的泳池，会定时的造浪，儿子最喜欢的，就是太空盆，大人的纠结半天没敢玩，累了可以去养生馆泡温泉，水很干净不冷，玩的很开心！"
+			},{
+				"id": 3,
+				"imgUrl": "//img1.qunarzz.com/sight/p0/1703/27/276f941db3912ce7a3.img.jpg_600x237_c8879e00.jpg",
+				"title": "郁金香摩锐温泉水世界",
+				"characteristic1": "住宿",
+				"characteristic2": "SPA",
+				"characteristic3": "儿童乐园",
+				"price": "118",
+				"comment": "b*7：这里更适合孩子玩，池子有五六个吧，都挺大的，还有滑梯，1米2以下孩子还免费，太超值了，淋雨更衣室都挺干净的。"
+			}
+		],
+		"onedayInfo": [
+			{
+				"id": 1,
+				"imgUrl": "//img1.qunarzz.com/sight/p0/1510/3e/3e8e30a6ff5d1cb090.water.jpg_290x168_97013eb0.jpg",
+				"title": "古北水镇+段家温泉一日游【享长城脚下温泉、赏水镇魅力夜色】",
+				"price": "108"
+			},{
+				"id": 2,
+				"imgUrl": "//img1.qunarzz.com/sight/p0/1702/22/222bf121e6cb6c14a3.water.jpg_290x168_c55b03b3.jpg",
+				"title": "尊享立秋后古北水镇温柔之美 一日游玩",
+				"price": "80"
+			}
+		],
+		"guardianInfo": [
+			{
+				"id": 1,
+				"title": " —【泡温泉】— ",
+				"firststep": "第一步：淋浴，泡汤可不是泡澡，首先就要淋浴，同时给身体适应的时间",
+				"secondstep": "第二步：淋泉水，泡汤切忌一下跃入汤池，很容易发生头晕。可先做在汤池边从脚淋起，全身都要用温泉水润湿，可预防脑贫血的发生。",
+				"threestep": "第三步：泡温泉，慢慢地进入汤池，刚开始只泡到胸口部分，约浸个3-5分钟左右，全身都暖活起来后，再慢慢泡到肩膀高度。期间要注意多补充水分。",
+				"fourthstep":"第四步：泡温泉之后建议进行淋浴，避免引起皮肤过敏等不适。"
+
+			},{
+				"id": 2,
+				"title": " —【准备事项】— ",
+				"firststep": "1.泳衣拖鞋等个人物品要提前准备好，爱美的小仙女们护肤品也是必不可少的。",
+				"secondstep": "2.心爱的首饰在泡温泉前要取下收好，温泉会对金属物品有氧化腐蚀的作用。",
+				"threestep": "3.戴隐形眼睛的小伙伴最好在泡温泉时取下隐形，否则容易引起眼部干燥不适。",
+				"fourthstep":"4.饭前饭后两小时最好不要泡温泉，容易发生低血糖和头晕。"
+			},{
+				"id": 3,
+				"title": " —【准备事项】— ",
+				"firststep": "1.心血管方面疾病患者容易发生危险要谨慎泡温泉；",
+				"secondstep": "2.过于疲劳和饮酒过量者泡温泉易产生更多不适；",
+				"threestep": "3.严重皮肤病病及破损可能会发生继发感染；",
+				"fourthstep":"4.患有眼疾的患者的患者不宜泡温泉。"
+			}
+		],
+		"cityInfo": [
+			{
+				"hotcity": [
+					{
+						"id": 1,
+						"city": "广东"
+					},{
+						"id": 2,
+						"city": "北京"
+					},{
+						"id": 3,
+						"city": "四川"
+					},{
+						"id": 4,
+						"city": "江西"
+					},{
+						"id": 5,
+						"city": "湖北"
+					},{
+						"id": 6,
+						"city": "江苏"
+					},{
+						"id": 7,
+						"city": "重庆"
+					},{
+						"id": 8,
+						"city": "辽宁"
+					},{
+						"id": 9,
+						"city": "浙江"
+					},{
+						"id": 10,
+						"city": "山东"
+					}
+				]},
+				{"northchina": [
+					{
+						"id": 1,
+						"city": "北京"
+					},{
+						"id": 2,
+						"city": "河北"
+					},{
+						"id": 3,
+						"city": "天津"
+					},{
+						"id": 4,
+						"city": "山西"
+					},{
+						"id": 5,
+						"city": "内蒙古"
+					}
+				]},
+				{"Northeast": [
+					{
+						"id": 1,
+						"city": "辽宁"
+					},{
+						"id": 2,
+						"city": "吉林"
+					},{
+						"id": 3,
+						"city": "黑龙江"
+					}
+				]},
+				{"southchina": [
+					{
+						"id": 1,
+						"city": "广东"
+					},{
+						"id": 2,
+						"city": "海南"
+					},{
+						"id": 3,
+						"city": "广西"
+					}
+				]},
+				{"eastchina": [
+					{
+						"id": 1,
+						"city": "江西"
+					},{
+						"id": 2,
+						"city": "江苏"
+					},{
+						"id": 3,
+						"city": "福建"
+					},{
+						"id": 4,
+						"city": "浙江"
+					},{
+						"id": 5,
+						"city": "山东"
+					},{
+						"id": 6,
+						"city": "安徽"
+					},{
+						"id": 7,
+						"city": "上海"
+					}
+				]},
+				{"northwest": [
+					{
+						"id": 1,
+						"city": "陕西"
+					},{
+						"id": 2,
+						"city": "甘肃"
+					}
+				]},
+				{"southwest": [
+					{
+						"id": 1,
+						"city": "四川"
+					},{
+						"id": 2,
+						"city": "重庆"
+					},{
+						"id": 3,
+						"city": "云南"
+					},{
+						"id": 4,
+						"city": "贵州"
+					}
+				]},
+				{"centralchina": [
+					{
+						"id": 1,
+						"city": "湖北"
+					},{
+						"id": 2,
+						"city": "河南"
+					},{
+						"id": 3,
+						"city": "湖南"
+					}
+				]}
+				
+		
+		]
+	}
+}

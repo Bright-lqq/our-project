@@ -1,5 +1,5 @@
 <template>
-<div>
+<div v-show="show">
     <div class="mask"></div>
     <div class="dialog-outer">
         <div class="coupon-outer">
@@ -43,12 +43,21 @@
                 </div>
             </div>
         </div>
-        <div class="dialog-close"></div>
+        <div class="dialog-close" @click="handleCloseClick"></div>
     </div>
 </div>
 </template>
 <script>
 
+ export default {
+    props: ["show"],
+
+    methods: {
+        handleCloseClick() {
+            this.$emit("close");
+        }
+    }
+ }
 </script>
 <style>
 .mask {
@@ -343,10 +352,10 @@
 </style>
 <style scoped>
 .mask {
-    display:none;
+    display:block;
 }
 .dialog-outer {
-    display: none;
+    display: block;
 }
 
 </style>

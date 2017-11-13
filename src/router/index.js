@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-<<<<<<< HEAD
 import Activity from '@/pages/activity/Activity'
 import Home from '@/pages/home/Home'
 import Suggest from '@/pages/suggest/Suggest'

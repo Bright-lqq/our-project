@@ -1,149 +1,83 @@
 <template>
-<div>
+<div v-show="show">
     <div class="mask"></div>
     <div class="dialog-outer dialog-area">
         <div class="area-more">
             <div class="area-type">热门省份</div>
-            <ul class="clrfix">
-                <li class="area-item flexbox-layout" v-for="item in cityInfo" :key="item.id">
-                    <span class="area-inner">{{item.city}}</span>
-                </li>
-                <li class="area-item flexbox-layout area-actived">
-
-                </li>
-
-            </ul>
-            <div>
+            <template v-if="cityInfo.length !== 0">
+                <ul class="clrfix">
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[0].hotcity" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
+                    </li>
+                </ul>
+                
                 <div class="area-type">华北</div>
                 <ul class="clrfix">
-                    <li class="area-item flexbox-layout area-actived">
-                        <span class="area-inner">北京</span>
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[1].northchina" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
                     </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">河北</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">天津</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">山西</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">内蒙古</span>
-                    </li>
+                
                 </ul>
-            </div>
-            <div>
                 <div class="area-type">东北</div>
                 <ul class="clrfix">
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">辽宁</span>
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[2].Northeast" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
                     </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">吉林</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">黑龙江</span>
-                    </li>
+    
                 </ul>
-            </div>
-            <div>
                 <div class="area-type">华南</div>
                 <ul class="clrfix">
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">广东</span>
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[3].southchina" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
                     </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">海南</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">广西</span>
-                    </li>
+
                 </ul>
-            </div>
-            <div>
                 <div class="area-type">华东</div>
                 <ul class="clrfix">
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">江西</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">江苏</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">福建</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">浙江</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">山东</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">安徽</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">上海</span>
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[4].eastchina" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
                     </li>
                 </ul>
-            </div>
-            <div>
                 <div class="area-type">西北</div>
                 <ul class="clrfix">
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">陕西</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">甘肃</span>
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[5].northwest" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
                     </li>
                 </ul>
-            </div>
-            <div>
                 <div class="area-type">西南</div>
                 <ul class="clrfix">
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">四川</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">重庆</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">云南</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">贵州</span>
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[6].southwest" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
                     </li>
                 </ul>
-            </div>
-            <div>
                 <div class="area-type">华中</div>
                 <ul class="clrfix">
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">湖北</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">河南</span>
-                    </li>
-                    <li class="area-item flexbox-layout">
-                        <span class="area-inner">湖南</span>
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[7].centralchina" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
                     </li>
                 </ul>
-            </div>
+            </template>
         </div>
-        <div class="dialog-close" id="close"></div>
+        <div class="dialog-close" id="close" @click="handleCouponClose"></div>
     </div>
    
 </div>
 </template>
 <script>
+import {mapState} from "vuex"
  export default {
-     computed: {
-            cityInfo() {
-                
-                return this.$store.state.activity.cityInfo
+     props: ["show"],
+     computed: mapState({
+            cityInfo:(state) => {
+                return state.activity.cityInfo
                 
             }
+        }),
+    methods: {
+        handleCouponClose() {
+            this.$emit("close");
         }
+    }
  }
  
 </script>

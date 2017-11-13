@@ -1,34 +1,58 @@
 <template>
-    <div class="mp-banner mp-img-container">
+    <div class="banner img-container">
         <img src="//img1.qunarzz.com/piao/fusion/1710/a5/30bea424f8862102.jpg_640x361_929a4c2a.jpg"></img>
-        <div class="mp-banner-detail">
-            <h2 class="mp-banner-title">
-                <span class="mp-banner-meteor"></span>
-                <span class="mp-banner-star"></span>
-                <strong class="mp-banner-txt">温泉五折起</strong>
-                <span class="mp-banner-star"></span>
-                <span class="mp-banner-meteor mp-banner-meteor-right"></span>
+        <div class="banner-detail">
+            <h2 class="banner-title">
+                <span class="banner-meteor"></span>
+                <span class="banner-star"></span>
+                <strong class="banner-txt">温泉五折起</strong>
+                <span class="banner-star"></span>
+                <span class="banner-meteor banner-meteor-right"></span>
             </h2>
-            <div class="mp-banner-desc mp-ellipsis">精挑细选温泉清单</div>
+            <div class="banner-desc ellipsis">精挑细选温泉清单</div>
         </div>
-        <div class="mp-location-outer">
-        <div class="mp-location-expand">北京</div>
-    </div>
+        <div class="location-outer">
+            <div class="location-expand" @click="handleClick">北京</div>
+        </div>
+        <activity-city :show="cityShow" v-on:close="handleCityClose"></activity-city>
+        
     </div>
     
 </template>
+<script>
+
+    import city from "./City.vue";
+    export default {
+        data() {
+            return {
+                cityShow: false
+            }
+        },
+        methods: {
+            handleClick() {
+                this.cityShow = true;
+            },
+            handleCityClose() {
+                this.cityShow = false;
+            }
+        },
+        components: {
+            "activity-city": city
+        }
+    }
+</script>
 <style>
-.mp-banner {
+.banner {
     position: relative;
     padding-bottom: 56.4%;
     background-color: #fff;
 }
-.mp-img-container {
+.img-container {
     overflow: hidden;
     width: 100%;
     height: 0;
 }
-.mp-banner::after {
+.banner::after {
     content: '\0020';
     position: absolute;
     z-index: 1;
@@ -38,11 +62,11 @@
     height: 100%;
     background: rgba(0,0,0,.5);
 }
-.mp-banner img {
+.banner img {
     width: 100%;
     vertical-align: top;
 }
-.mp-banner-detail {
+.banner-detail {
     position: absolute;
     z-index: 2;
     top: 50%;
@@ -52,11 +76,11 @@
     text-align: center;
     transform: translate(-50%,-50%);
 }
-.mp-banner-title {
+.banner-title {
     display: inline-block;
     white-space: nowrap;
 }
-.mp-banner-meteor {
+.banner-meteor {
     display: inline-block;
     position: relative;
     width: .6rem;
@@ -66,7 +90,7 @@
     vertical-align: middle;
     background-image: linear-gradient(to right,rgba(255,255,255,0),#fff);
 }
-.mp-banner-meteor::before {
+.banner-meteor::before {
     content: '\0020';
     position: absolute;
     top: -.02rem;
@@ -75,7 +99,7 @@
     height: .02rem;
     background-image: linear-gradient(to right,rgba(255,255,255,0),#fff);
 }
-.mp-banner-star {
+.banner-star {
     width: 0;
     height: 0;
     font-size: 0;
@@ -87,7 +111,7 @@
     position: relative;
     vertical-align: middle;
 }
-.mp-banner-star::before {
+.banner-star::before {
     transform: rotate(72deg);
     content: '\0020';
     position: absolute;
@@ -101,7 +125,7 @@
     border-style: solid;
     border-color: #fff transparent transparent;
 }
-.mp-banner-star::after {
+.banner-star::after {
     transform: rotate(-72deg);
     content: '\0020';
     position: absolute;
@@ -115,7 +139,7 @@
     border-style: solid;
     border-color: #fff transparent transparent;
 }
-.mp-banner-txt {
+.banner-txt {
     display: inline-block;
     overflow: hidden;
     max-width: 60%;
@@ -124,29 +148,29 @@
     line-height: .5rem;
     vertical-align: middle;
 }
-.mp-banner-meteor-right {
+.banner-meteor-right {
     background-image: linear-gradient(to right,#fff,rgba(255,255,255,0));
 }
-.mp-banner-meteor-right::before {
+.banner-meteor-right::before {
     right: auto;
     left: 0;
     background-image: linear-gradient(to right,#fff,rgba(255,255,255,0));
 }
-.mp-banner-desc {
+.banner-desc {
     font-size: .44rem;
     line-height: .6rem;
 }
-.mp-ellipsis {
+.ellipsis {
     overflow: hidden;
     width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.mp-location-outer {
+.location-outer {
     position: absolute;
     width: 100%;
 }
-.mp-location-expand {
+.location-expand {
     position: absolute;
     z-index: 2;
     top: -.8rem;
@@ -159,7 +183,7 @@
     line-height: .56rem;
     border-radius: .56rem;
 }
-.mp-location-expand::before {
+.location-expand::before {
     content: '\0020';
     overflow: hidden;
     position: absolute;

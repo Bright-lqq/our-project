@@ -6,10 +6,34 @@
                 <div class="coupon-name ellipsis">先领券再泡汤 </div>
                 <div class="coupon-desc ellipsis">- 门票新客代金券 -</div>
             </div>
-            <div class="coupon-btn">立即领取</div>
+            <div class="coupon-btn" @click="handleClick">立即领取</div>
         </div>
+        <activity-coupon :show="couponShow" v-on:close="handleCouponClose"></activity-coupon>
     </div>
 </template>
+<script>
+
+    import coupon from "./Coupon.vue";
+    export default {
+        data() {
+            return {
+                couponShow: false
+            }
+        },
+        methods: {
+            handleClick() {
+                console.log(1)
+                this.couponShow = true;
+            },
+            handleCouponClose() {
+                this.couponShow = false;
+            }
+        },
+        components: {
+            "activity-coupon": coupon
+        }
+    }
+</script>
 <style>
 .coupon-module {
     margin-bottom: .2rem;
