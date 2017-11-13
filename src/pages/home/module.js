@@ -4,12 +4,14 @@ import { SET_DATA, AJAX_GET_DATA } from './types.js'
 export default {
 	state: {
 		swiperInfo: [],
-		hostInfo: []
+		hostInfo: [],
+		weekendInfo: []
 	},
 	mutations: {
 		[SET_DATA](state, payload) {
 			state.swiperInfo = payload.swiperInfo;
 			state.hostInfo = payload.hostInfo;
+			state.weekendInfo = payload.weekendInfo;
 		}
 	},
 	actions: {

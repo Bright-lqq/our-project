@@ -38,7 +38,6 @@
 </script>
 
 <style>
-
     .home-swiper-pagination {
         position: absolute;
         height: .2rem;
