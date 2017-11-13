@@ -1,0 +1,258 @@
+{
+	"ret": true,
+	"data": {
+		"promoteInfo": [
+			{
+				"id": 1,
+				"title": "北京欢乐谷金面王朝演出票（19:30场次，座位随机）",
+				"time": "16:00前可订今日",
+				"sales": "条件退",
+				"title2": "北京欢乐谷门票",
+				"price": "13",
+				"ablebtn": "预定",
+				"detail": "",
+				"pricenum":"",
+				"symbol": ""
+
+			},{
+				"id": 2,
+				"title": "北京欢乐谷日场-特惠成人票（11.3-11.12）",
+				"time": "可定明日",
+				"sales": "条件退",
+				"title2": "北京欢乐谷门票",
+				"price": "111",
+				"detail": "赠券",
+				"pricenum":"2.0",
+				"ablebtn": "预定",
+				"symbol": "¥"
+			},{
+				"id": 3,
+				"title": "北京欢乐谷一日游*一票通玩",
+				"time": "可定11月11日",
+				"sales": "无购物",
+				"title2": "北京欢乐谷门票",
+				"price": "298",
+				"ablebtn": "查看",
+				"detail": "",
+				"pricenum":"",
+				"symbol": ""
+			}
+		],
+		"promoInfo":[
+			{
+				"id": 4,
+				"name": "【活动票】北京欢乐谷金面王朝演出成人票",
+				"price": "12.9"
+			},{
+				"id": 5,
+				"name": "【活动票】北京欢乐谷日场成人票",
+				"price": "110.9"
+			},{
+				"id": 6,
+				"name": "【活动票】北京欢乐谷成人夜场票",
+				"price": "9.5"
+			}
+		],
+		"promoInfo2":[
+			{
+				"id": 7,
+				"title": "北京欢乐谷金面王朝演出票（19:30场次，座位随机）",
+				"time": "16:00前可订今日",
+				"sales": "条件退",
+				"price": "12.9",
+				"ablebtn": "预定",
+				"name": "酷游天下"
+			},{
+				"id": 8,
+				"title": "北京欢乐谷金面王朝演出票（17:30场次，座位随机）",
+				"time": "17:15前可订今日",
+				"sales": "条件退",
+				"price": "15",
+				"ablebtn": "预定",
+				"name": "票票券"
+			},{
+				"id": 9,
+				"title": "北京欢乐谷游乐场金面王朝演出票（17:30场次，座位随机）",
+				"time": "15.45前可订今日",
+				"sales": "条件退",
+				"price": "15",
+				"ablebtn": "预定",
+				"name": "厦门旅游集散服务中心"
+			}
+		],
+		"TicketgroupInfo":[
+			{
+				"id": 4,
+				"title":"成人票",
+				"name": "北京欢乐谷成人票",
+				"price": "247",
+				"list":[{
+						"id": 1,
+						"title2": "【官方直销】北京欢乐谷日场门票 刷身份证入园",
+						"time": "12:00前可订今日",
+						"sales": "条件退",
+						"price2": "249",
+						"ablebtn": "预定",
+						"name2": "去哪儿直销"
+				},
+				{
+						"id": 2,
+						"title2": "【直接刷身份证入园】北京欢乐谷日场成人票",
+						"time": "12:00前可订今日",
+						"sales": "可订明日",
+						"price2": "249",
+						"ablebtn": "预定",
+						"name2": "驴得水"
+				},
+				{
+						"id": 3,
+						"title2": "【刷身份证入园】北京欢乐谷成人票",
+						"time": "12:00前可订今日",
+						"sales": "13:00前可订今日",
+						"price2": "249",
+						"ablebtn": "预定",
+						"name2": "恒祥票务"
+				}
+			]
+			},{
+				"id": 5,
+				"title":"夜场票",
+				"name": "[夜场]北京欢乐谷成人票",
+				"price": "10.4",
+				"list":[{
+						"id": 1,
+						"title2": "【免排队取票，刷身份证入园】北京欢乐谷夜场成人票",
+						"time": "11:45前可订今日",
+						"sales": "条件退",
+						"price2": "10.5",
+						"ablebtn": "预定",
+						"name2": "酷游天下"
+				}]
+			},{
+				"id": 6,
+				"title":"套票",
+				"name": "北京欢乐谷+天津欢乐谷联票",
+				"price": "249",
+				"list":[{
+						"id": 1,
+						"title2": "北京欢乐谷日场票+金面王朝演出（19:30场次）套票北京欢乐谷日场票+金面王朝演出（19:30场次）套票",
+						"time": "13:00前可订今日",
+						"sales": "条件退",
+						"price2": "15",
+						"ablebtn": "预定",
+						"name2": "票票券"
+				}]
+			}
+		],
+		"CommentImg":[
+			{
+			"id":1,
+			"img":"http://img1.qunarzz.com/piao/fusion/1710/8a/890e70fa1a413002.jpg_228x168_3b49d31f.jpg"
+			},
+			{
+			"id":2,
+			"img":"http://img1.qunarzz.com/piao/fusion/1710/4b/498ba48a47028b02.jpg_228x168_244486fd.jpg"
+			},
+			{
+			"id":3,
+			"img":"http://img1.qunarzz.com/piao/fusion/1710/52/668f1844d8245b02.jpg_228x168_33adec97.jpg"
+			},
+			{
+			"id":4,
+			"img":"http://img1.qunarzz.com/piao/fusion/1710/8a/890e70fa1a413002.jpg_228x168_3b49d31f.jpg"
+			},
+			{
+			"id":5,
+			"img":"http://img1.qunarzz.com/piao/fusion/1710/8a/890e70fa1a413002.jpg_228x168_3b49d31f.jpg"
+			},
+			{
+			"id":6,
+			"img":"http://img1.qunarzz.com/piao/fusion/1710/52/668f1844d8245b02.jpg_228x168_33adec97.jpg"
+			}
+		],
+		"recommendInfo": [
+			{
+				"id":1,
+				"src":"http://img1.qunarzz.com/sight/p0/1707/2a/2a0adbeebf6d18bba3.water.jpg_228x168_f7881dc4.jpg",
+				"title":"北京杜莎夫人蜡像馆",
+				"price":"84.2",
+				"num":"5229条评论",
+				"name":"北京·前门大街",
+				"span":""
+			},
+			{
+				"id":2,
+				"src":"http://img1.qunarzz.com/sight/p0/201405/12/51b63883c25f5d87af3c08bb016e2bd7.jpg_228x168_ec8547e9.jpg",
+				"title":"恭王府",
+				"price":"19.9",
+				"num":"24515条评论",
+				"name":"北京·西城区",
+				"span":"(5A)"
+
+			},
+			{
+				"id":3,
+				"src":"http://img1.qunarzz.com/sight/p0/1508/fe/434ee530e21f1c11bad088e8cc8d5e93.water.jpg_228x168_6572dd12.jpg",
+				"title":"鸟巢",
+				"price":"50",
+				"num":"1653条评论",
+				"name":"北京·前门大街",
+				"span":"(5A)"
+
+			},
+			{
+				"id":4,
+				"src":"http://img1.qunarzz.com/sight/p0/1602/68/68aa05adb5315f9990.water.jpg_228x168_3aee83cc.jpg",
+				"title":"北京海洋馆",
+				"price":"84.2",
+				"num":"1005条评论",
+				"name":"北京·奥林匹克公园",
+				"span":"(4A)"
+
+			},
+			{
+				"id":5,
+				"src":"http://img1.qunarzz.com/sight/p0/201308/08/41150dacc0e3a0c8c8d65eac.jpg_228x168_837c0639.jpg",
+				"title":"北京海洋馆",
+				"price":"78",
+				"num":"1005条评论",
+				"name":"北京·西城区",
+				"span":"(4A)"
+
+			},
+			{
+				"id":6,
+				"src":"http://img1.qunarzz.com/sight/p0/1505/f5/f5f45e1a83537bcb.water.jpg_228x168_8bb97036.jpg",
+				"title":"北京动物园",
+				"price":"84.2",
+				"num":"12454条评论",
+				"name":"北京·海淀区",
+				"span":"(4A)"
+
+			}
+
+		],
+		"imgList":[
+			{
+				"id":1,
+				"imgUrl":"http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_800x800_1e6a752a.jpg"
+			},
+			{
+				"id":2,
+				"imgUrl":"http://img1.qunarzz.com/sight/p0/1501/ab/ab02fceb3fa0a60e.water.jpg_800x800_26380848.jpg"
+			},
+			{
+				"id":3,
+				"imgUrl":"http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_800x800_1e6a752a.jpg"
+			},
+			{
+				"id":4,
+				"imgUrl":"http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_800x800_1e6a752a.jpg"
+			},
+			{
+				"id":5,
+				"imgUrl":"http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_800x800_1e6a752a.jpg"
+			}
+		]
+	}
+}
