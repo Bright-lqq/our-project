@@ -57,5 +57,5 @@
     display: block;
     font-size: .42rem;
     color: #9e9e9e;
-    }
+}
 </style>

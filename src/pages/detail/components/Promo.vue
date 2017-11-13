@@ -91,76 +91,75 @@
 .ticket-group {
 	margin-top: .2rem;
 	background: #fff;
-
 }
 .ticket-type {
 	overflow: hidden;
-    position: relative;
-    z-index: 4;
-    margin-bottom: -.02rem;
-    padding: 0 .2rem;
-    height: .88rem;
-    background: #fff;
-    color: #333;
-    font-size: .32rem;
-    line-height: .88rem;
-    text-indent: .4rem;
+	position: relative;
+	z-index: 4;
+	margin-bottom: -.02rem;
+	padding: 0 .2rem;
+	height: .88rem;
+	background: #fff;
+	color: #333;
+	font-size: .32rem;
+	line-height: .88rem;
+	text-indent: .4rem;
 }
 .ticketype-ticket {
 	display: inline-block;
-    position: absolute;
-    width: .36rem;
-    height: .36rem;
-    top: .26rem;
-    left: .2rem;
-    background: url(../../../app/img/detail.png) 0 -.45rem no-repeat;
-    margin-right: .1rem;
-    background-size: .4rem 3rem;
+	position: absolute;
+	width: .36rem;
+	height: .36rem;
+	top: .26rem;
+	left: .2rem;
+	background: url(../../../app/img/detail.png) 0 -.45rem no-repeat;
+	margin-right: .1rem;
+	background-size: .4rem 3rem;
 }
 .ticket-type-info {
 	position: relative;
-    margin-bottom: -.02rem;
-    padding: .24rem .2rem;
-    background: #fff;
-    border-top: .04rem solid #eee;
+	margin-bottom: -.02rem;
+	padding: .24rem .2rem;
+	background: #fff;
+	border-top: .04rem solid #eee;
 }
 .ticket-type-name {
 	margin-right: 1.8rem;
-    color: #333;
-    font-size: .3rem;
-    line-height: .48rem;
-    display: -webkit-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+	color: #333;
+	font-size: .3rem;
+	line-height: .48rem;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
 }
 .ticket-type-price {
 	right: .46rem;
-    margin-top: -.28rem;
-    color: #ff9800;
-    font-size: .24rem;
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    height: .4rem;
-    line-height: .4rem;
+	margin-top: -.28rem;
+	color: #ff9800;
+	font-size: .24rem;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	height: .4rem;
+	line-height: .4rem;
 }
 .ticket-numword {
 	display: inline-block;
-    color: #9e9e9e;
-    font-size: .24rem;
+	color: #9e9e9e;
+	font-size: .24rem;
 }
 .ticket-type-extend {
 	position: absolute;
-    top: 50%;
-    height: .4rem;
-    line-height: .4rem;
+	top: 50%;
+	height: .4rem;
+	line-height: .4rem;
 	right: .2rem;
-    margin-top: -.22rem;
-    color: #bbb;
-    font-size: .32rem;
-    overflow: hidden;	   
+	margin-top: -.22rem;
+	color: #bbb;
+	font-size: .32rem;
+	overflow: hidden;	   
 }
 .ticket-default {
 	width:100%;
@@ -182,12 +181,12 @@
 .ticket-title-name {
 	margin-right: .1rem;
 	font-size: .3rem;
-    overflow: hidden;
-    line-height: .34rem;
-    max-width: 2.5rem;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    color: #666;
+	overflow: hidden;
+	line-height: .34rem;
+	max-width: 2.5rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #666;
 }
 .ticket-title {
 	margin-top: .1rem;
@@ -204,11 +203,11 @@
 }
 .ticket-sale {
 	display: block;
-    overflow: hidden;
-    height: .32rem;
-    font-size: .24rem;
-    line-height: .28rem;
-    text-align: center;
+	overflow: hidden;
+	height: .32rem;
+	font-size: .24rem;
+	line-height: .28rem;
+	text-align: center;
 	color: #ff9800;
 }
 .ticket-desctag {
@@ -236,9 +235,9 @@
 } 
 .ticket-link {
 	box-sizing: border-box;
-    display: block;
-    width: 100%;
-    padding-left: .2rem;
+	display: block;
+	width: 100%;
+	padding-left: .2rem;
 }
 .ticket-detail {
 	padding: .04rem 0 .08rem 0;
@@ -246,17 +245,17 @@
 }
 .ticket-tag {
 	overflow: hidden;
-    float: left;
-    margin: .04rem .06rem .04rem 0;
-    padding: 0 .04rem;
-    color: #ff6b62;
-    font-size: .24rem;
-    white-space: nowrap;
-    border-radius: 2px;
+	float: left;
+	margin: .04rem .06rem .04rem 0;
+	padding: 0 .04rem;
+	color: #ff6b62;
+	font-size: .24rem;
+	white-space: nowrap;
+	border-radius: 2px;
 }
 .price-num {
 	line-height: .3rem;
-    font-size: .36rem;
+	font-size: .36rem;
 }
 .ticket-redpacket {
 	border: .02rem solid #ff6b62;
