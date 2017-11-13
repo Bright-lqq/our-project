@@ -20,9 +20,9 @@ export default new Router({
 			name: 'suggest',
 			component: Suggest
 		}, {
-      path: '/activity',
-      name: 'activity',
-      component: Activity
+			path: '/activity',
+			name: 'activity',
+			component: Activity
     }, {
 	        path: '/list',
 	        name: 'List',

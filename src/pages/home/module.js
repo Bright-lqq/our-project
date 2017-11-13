@@ -3,19 +3,37 @@ import { SET_DATA, AJAX_GET_DATA } from './types.js'
 
 export default {
 	state: {
-		swiperInfo: []
+		swiperInfo: [],
+		iconswiper: []
 	},
 	mutations: {
 		[SET_DATA](state, payload) {
-			state.swiperInfo = payload;
+
+			state.swiperInfo = payload.swiperInfo;
+			state.iconswiper = payload.iconswiper;
 		}
 	},
 	actions: {
 		[AJAX_GET_DATA](context) {
 			axios.get('/static/index.json?city=北京')
 				.then((response) => {
-					context.commit(SET_DATA, response.data.data.swiperInfo);
+					context.commit(SET_DATA, response.data.data);
 				})
+				.catch();
+		}
+	},
+
+	getters: {
+		abc(state) {
+			const result = [];
+			state.iconswiper.forEach((value, index) => {
+			let page = Math.floor(index / 8)
+			if(!result[page]) {
+				result[page] = [];
+			}
+			result[page].push(value);
+			});
+			return result;
 		}
 	}
 }

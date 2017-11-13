@@ -1,22 +1,22 @@
 <template>
-    <div class="mp-coupon-module">
-        <div class="mp-coupon-entrance clrfix">
-            <div class="mp-coupon-value mp-price">￥<em class="mp-price-num">5</em></div>
-            <div class="mp-coupon-info">
-                <div class="mp-coupon-name mp-ellipsis">先领券再泡汤 </div>
-                <div class="mp-coupon-desc mp-ellipsis">- 门票新客代金券 -</div>
+    <div class="coupon-module">
+        <div class="coupon-entrance clrfix">
+            <div class="coupon-value price">￥<em class="price-num">5</em></div>
+            <div class="coupon-info">
+                <div class="coupon-name ellipsis">先领券再泡汤 </div>
+                <div class="coupon-desc ellipsis">- 门票新客代金券 -</div>
             </div>
-            <div class="mp-coupon-btn">立即领取</div>
+            <div class="coupon-btn">立即领取</div>
         </div>
     </div>
 </template>
 <style>
-.mp-coupon-module {
+.coupon-module {
     margin-bottom: .2rem;
     padding: .16rem 0;
     background: #fff;
 }
-.mp-coupon-entrance {
+.coupon-entrance {
     position: relative;
     margin: 0 auto;
     width: 81.3%;
@@ -25,7 +25,7 @@
     background-image: linear-gradient(to right,#ffd033,#ff5d11);
     border-radius: .06rem;
 }
-.mp-coupon-entrance::before {
+.coupon-entrance::before {
     content: '\0020';
     position: absolute;
     top: 50%;
@@ -36,10 +36,10 @@
     background: #fff;
     border-radius: 50%;
 }
-.mp-price {
+.price {
     font: .24rem "Microsoft yahei","Hiragino sans gb",Arial,sans-serif;
 }
-.mp-coupon-value {
+.coupon-value {
     overflow: hidden;
     float: left;
     width: 25%;
@@ -48,31 +48,31 @@
     line-height: 1.5rem;
     text-align: right;
 }
-.mp-price-num {
+.coupon-value .price-num {
     margin-left: .1rem;
     font-size: 1rem;
 }
-.mp-coupon-info {
+.coupon-info {
     float: left;
     width: 53%;
     text-align: center;
 }
-.mp-coupon-name {
+.coupon-name {
     padding-top: .36rem;
     font-size: .36rem;
     line-height: .5rem;
 }
-.mp-coupon-desc {
+.coupon-desc {
     font-size: .24rem;
     line-height: .34rem;
 }
-.mp-ellipsis {
+.ellipsis {
     overflow: hidden;
     width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.mp-coupon-btn {
+.coupon-btn {
     float: right;
     width: .28rem;
     padding: .2rem .4rem;
