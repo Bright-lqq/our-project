@@ -5,13 +5,59 @@
 				<i class="iconfont icon-return"></i>
 			</a>
 		</router-link>
-		<input class="suggest-header-title" placeholder="输入城市或景点" />
-		<div class="suggest-header-right">
+		<input class="suggest-header-title" placeholder="输入城市或景点" v-model="city" />
+		<div class="suggest-header-right" @click="handleClick()">
 			<a class="suggest-header-search">搜索</a>
+		</div>
+		<div class="connect-cities" v-show="isshow">
+			<div class="connect-head">
+				<span class="search-suggest">搜索建议</span>
+				<span class="close">关闭</span>
+			</div>
+			<ul class="connect-content">
+				<li class="" >
+					<a></a>
+				</li>
+			</ul>
 		</div>
 		
 	</header>
 </template>
+
+<script>
+export default {
+	data () {
+	    return {
+	    	isshow: false,
+			city: '',
+			cities: ['上海'],
+			selectCities: []
+	    }
+	},
+
+	methods: {
+	},
+
+	watch:{
+		city: function(val, oldVal){
+			if(val.length == 0) {
+				this.isshow = false;
+			}else {
+
+				this.isshow = true;
+				var cities = [];
+				this.cities.forEach((item, index) => {
+					if(item.indexOf(val) >= 0){
+						cities.unshift(item)
+					}
+				})  
+				this.selectCities = cities;
+			}
+		}
+	}
+}
+</script>
+
 
 <style scoped>
 	.suggest-header {
@@ -53,6 +99,14 @@
 	}
 	.suggest-header-search {
 		color: #fff;
-	} 
+	}
+	.connect-cities {
+		position: relative;
+		top: .88rem;
+		min-height: 3rem;
+		background: #fff; 
+		z-index: 3;
+		box-shadow: 0 2px 6px 0 #c9cccd; 
+	}
 	
 </style>

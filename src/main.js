@@ -4,6 +4,7 @@ import router from './router'
 import store from './vuex'
 import FastClick from 'fastclick'
 
+window.bus = new Vue();
 
 
 new Vue({

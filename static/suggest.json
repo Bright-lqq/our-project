@@ -1,0 +1,115 @@
+{
+	"ret": true,
+	"data": {
+		"hotviewInfo": [
+			{
+				"id": 1,
+				"viewName": "香山公园",
+				"link": "/"
+			},{
+				"id": 2,
+				"viewName": "宋城千古情",
+				"link": "/"
+			},{
+				"id": 3,
+				"viewName": "故宫",
+				"link": "/"
+			},{
+				"id": 4,
+				"viewName": "天门狐仙",
+				"link": "/"
+			},{
+				"id": 5,
+				"viewName": "张家界大峡谷",
+				"link": "/"
+			},{
+				"id": 6,
+				"viewName": "鼓浪屿往返轮渡",
+				"link": "/"
+			},{
+				"id": 7,
+				"viewName": "鼓浪屿",
+				"link": "/"
+			},{
+				"id": 8,
+				"viewName": "颐和园",
+				"link": "/"
+			},{
+				"id": 9,
+				"viewName": "婺源",
+				"link": "/"
+			},{
+				"id": 10,
+				"viewName": "上海迪士尼乐园",
+				"link": "/"
+			},{
+				"id": 11,
+				"viewName": "华山",
+				"link": "/"
+			},{
+				"id": 12,
+				"viewName": "北京欢乐谷",
+				"link": "/"
+			},{
+				"id": 13,
+				"viewName": "恭王府",
+				"link": "/"
+			}
+		],
+		"hotcityInfo": [
+			{
+				"id": 1,
+				"cityName": "上海",
+				"link": "/"
+			},{
+				"id": 2,
+				"cityName": "乌鲁木齐",
+				"link": "/"
+			},{
+				"id": 3,
+				"cityName": "成都",
+				"link": "/"
+			},{
+				"id": 4,
+				"cityName": "哈尔滨",
+				"link": "/"
+			},{
+				"id": 5,
+				"cityName": "云南",
+				"link": "/"
+			},{
+				"id": 6,
+				"cityName": "张家口",
+				"link": "/"
+			},{
+				"id": 7,
+				"cityName": "大理",
+				"link": "/"
+			},{
+				"id": 8,
+				"cityName": "洛阳",
+				"link": "/"
+			},{
+				"id": 9,
+				"cityName": "厦门",
+				"link": "/"
+			},{
+				"id": 10,
+				"cityName": "沈阳",
+				"link": "/"
+			},{
+				"id": 11,
+				"cityName": "大连",
+				"link": "/"
+			},{
+				"id": 12,
+				"cityName": "浙江",
+				"link": "/"
+			},{
+				"id": 13,
+				"cityName": "杭州",
+				"link": "/"
+			}
+		]
+	}
+}
