@@ -4,6 +4,7 @@ import home from '../pages/home/module.js'
 import suggest from '../pages/suggest/module.js'
 import activity from '../pages/activity/moudle.js'
 import tour from '../pages/tour/module.js'
+import list from '../pages/list/module.js'
 
 Vue.use(Vuex);
 
@@ -12,6 +13,7 @@ export default new Vuex.Store({
 		home: home,
 		suggest : suggest,
 		activity: activity,
-		tour: tour
+		tour: tour,
+		list: list
 	}
 })

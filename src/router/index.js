@@ -6,8 +6,6 @@ import Suggest from '@/pages/suggest/Suggest'
 import List from '@/pages/list/List'
 import Tour from '@/pages/tour/Tour'
 
-
-
 Vue.use(Router)
 
 export default new Router({

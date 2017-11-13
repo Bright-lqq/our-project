@@ -4,15 +4,17 @@ import { SET_DATA, AJAX_GET_DATA } from './types.js'
 export default {
 	state: {
 		swiperInfo: [],
-		iconswiper: []
+		iconswiper: [],
+		hostInfo: []
 	},
 	mutations: {
 		[SET_DATA](state, payload) {
-
 			state.swiperInfo = payload.swiperInfo;
 			state.iconswiper = payload.iconswiper;
+			state.hostInfo = payload.hostInfo;
 		}
 	},
+	
 	actions: {
 		[AJAX_GET_DATA](context) {
 			axios.get('/static/index.json?city=北京')
@@ -27,13 +29,13 @@ export default {
 		abc(state) {
 			const result = [];
 			state.iconswiper.forEach((value, index) => {
-			let page = Math.floor(index / 8)
-			if(!result[page]) {
-				result[page] = [];
-			}
-			result[page].push(value);
+				let page = Math.floor(index / 8)
+				if(!result[page]) {
+					result[page] = [];
+				}
+				result[page].push(value);
 			});
-			return result;
+			return result
 		}
 	}
 }

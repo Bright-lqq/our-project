@@ -3,9 +3,9 @@
 		<div>{{$store.state.name}}</div>
 		<index-header />
 		<index-swiper :swiperInfo = "swiperInfo" />
-		<index-iconswiper iconswiper = "iconswiper" />
+		<index-iconswiper :iconswiper = "iconswiper" />
 		<index-activity />
-		<index-hotlist />
+		<index-hotlist :hostInfo = "hostInfo" />
 		<index-weekendlist />
 	</div>
 </template>
@@ -37,13 +37,15 @@
 			},
 			iconswiper: (state) => {
 				return state.home.iconswiper
+			},
+			hostInfo: (state) => {
+				return state.home.hostInfo
 			}
 		}),
 
 		mounted() {
 			this.getHomeData()
 		},
-
 		methods: mapActions({
 			getHomeData: (dispatch) => {
 				dispatch(AJAX_GET_DATA)

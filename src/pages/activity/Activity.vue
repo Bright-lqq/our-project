@@ -36,36 +36,34 @@
 
 
     export default {
-    components: {
-        "activity-header": header,
-        "activity-banner": banner,
-        "activity-discount": discount,
-        "activity-supervalue": supervalue,
-        "activity-landscape": landscape,
-        "activity-health": health,
-        "activity-parentchild": parentchild,
-        "activity-oneday": oneday,
-        "activity-guardian": guardian,
-        "activity-top": top,
-        "activity-coupon": coupon,
-        "activity-city": city
-        
-
-    },
+        components: {
+            "activity-header": header,
+            "activity-banner": banner,
+            "activity-discount": discount,
+            "activity-supervalue": supervalue,
+            "activity-landscape": landscape,
+            "activity-health": health,
+            "activity-parentchild": parentchild,
+            "activity-oneday": oneday,
+            "activity-guardian": guardian,
+            "activity-top": top,
+            "activity-coupon": coupon,
+            "activity-city": city
+        },
 
 
-    mounted() {
-        this.getActivityData()
-    },
+        mounted() {
+            this.getActivityData()
+        },
 
-    methods: mapActions({
-        getActivityData: (dispatch) => {
-            dispatch(AJAX_GET_DATA)
-        }
-    })
-  }
+        methods: mapActions({
+            getActivityData: (dispatch) => {
+                dispatch(AJAX_GET_DATA)
+            }
+        })
+    }
+
 </script>
 
-<style scoped>
-  
-</style>
+
+

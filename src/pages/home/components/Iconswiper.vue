@@ -96,7 +96,7 @@
         font-size: .28rem;
         overflow: hidden;
         text-overflow: ellipsis;
-    	white-space: nowrap;
+        white-space: nowrap;
     }
     .bullet-active{
         background: rgba(144,144,144,0.8);
