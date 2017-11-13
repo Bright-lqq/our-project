@@ -8,6 +8,7 @@
 <script>
 	import header from "./components/Header"
 	import viewnav from "./components/Viewnav"
+	import { mapActions } from "vuex"
 	
 	export default {
 		components: {

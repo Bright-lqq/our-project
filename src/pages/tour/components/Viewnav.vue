@@ -2,10 +2,10 @@
 	<div>
 		<div class="transverse-view-nav" ref="transverse">
 			<ul class="view-nav-wrapper">
-				<li class="view-nav-item">
-					<a href="" class="nav-item-link">八达岭长城</a>
+				<li class="view-nav-item" v-for="item in viewInfo" :key="item.id">
+					<a :href="item.link" class="nav-item-link">{{item.viewName}}</a>
 				</li>
-				<li class="view-nav-item">
+				<!-- <li class="view-nav-item">
 					<a href="" class="nav-item-link">古北水镇</a>
 				</li>
 				<li class="view-nav-item">
@@ -19,7 +19,7 @@
 				</li>
 				<li class="view-nav-item">
 					<a href="" class="nav-item-link">天安门广场</a>
-				</li>
+				</li> -->
 			</ul>
 			<span class="spread" @click="handleSpreadClick">
 				<i class="iconfont icon-down-trangle-copy-copy1"></i>
@@ -29,10 +29,10 @@
 			<p class="play-spots-title">游玩景点<span class="title-supplement">(可多选)</span></p>
 			<div class="play-spots-content">
 				<ul class="play-spots-wrapper">
-					<li class="play-spots-item">
-						<a href="" class="spots-item-link">八达岭长城</a>
+					<li class="play-spots-item" v-for="item in viewInfo" :key="item.id">
+						<a :href="item.link" class="spots-item-link">{{item.viewName}}</a>
 					</li>
-					<li class="play-spots-item">
+					<!-- <li class="play-spots-item">
 						<a href="" class="spots-item-link">古北水镇</a>
 					</li>
 					<li class="play-spots-item">
@@ -46,7 +46,7 @@
 					</li>
 					<li class="play-spots-item">
 						<a href="" class="spots-item-link">天安门广场</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 			<span class="retract" @click="handleRetractClick">
@@ -54,31 +54,27 @@
 			</span>
 		</div>
 		<ul class="play-list">
-			<li class="play-list-item">
+			<li class="play-list-item" v-for="list in itemInfo" :key="list.id">
 				<div class="list-item-icon">
-					<img class="list-item-img" src="http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg" alt="">
+					<img class="list-item-img" :src="list.imgUrl" alt="">
 				</div>
-				<div class="">
-					<h4 class="mp-list-productname mpg-ellipsis2">【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！
+				<div class="list-item-describe">
+					<h4 class="list-item-title">{{list.title}}
 					</h4>
-					<div class="">
-						<span class="mp-list-tagitemlight mpf-border-right">北京出发</span>
-						<span class="mp-list-tagitem mpf-border-right">无自费</span>
-						<span class="mp-list-tagitem mpf-border-right">无购物</span>
+					<div class="list-item-detail">
+						<span class="list-item-origin">{{list.origin}}</span>
+						<span class="without-expenses">{{list.expenses}}</span>
+						<span class="without-shopping">{{list.shopping}}</span>
 					</div>
-					<div class="mp-list-cashback">
-						
+					<div class="item-price">
+						<span class="RMB">&yen;<em>{{list.RMB}}</em></span>
+						<span class="item-price-mark">{{list.priceMark}}</span>
 					</div>
-					<div class="">
-						<span class="">¥<em>45</em></span>
-						<span class="">起</span>
-					</div>
-					<div class="mp-list-moreinfo">
-						<span class="mp-list-text mpf-border-left">已售6898</span>
+					<div class="sold">
+						<span class="sold-count">{{list.sold}}</span>
 					</div>
 				</div>
-				<a href="" class="mp-list-link" title="">【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！
-				</a>
+				
 			</li>
 		</ul>
 
@@ -87,8 +83,29 @@
 </template>
 
 <script>
+	import { AJAX_GET_DATA } from "../types"
+	import { mapState, mapActions } from 'vuex'
+
 	export default {
+		
+		computed: {
+			viewInfo() {
+				console.log(1);
+				return this.$store.state.tour.viewInfo
+			},
+			itemInfo() {
+				return this.$store.state.tour.itemInfo
+			}
+		},
+		mounted() {
+			this.GetTourData();
+		},
 		methods: {
+			...mapActions({
+		    	GetTourData: function(dispatch){
+		    		dispatch(AJAX_GET_DATA)
+		    	}
+	    	}),
 			handleSpreadClick() {
 				this.$refs.transverse.style.display="none";
 				this.$refs.play.style.display="block";
@@ -98,6 +115,7 @@
 				this.$refs.play.style.display="none";
 			}
 		}
+		
 	}
 </script>
 
@@ -108,13 +126,14 @@
 		background: #e5e7e8;
 		overflow: hidden;
 		border-bottom: 1px solid #bfc6ca;
+		z-index: 2; 
 		display: block;
 	}
 	.view-nav-wrapper {
 		height: .84rem;
 		line-height: .84rem;
 		white-space: nowrap;
-		overflow-x: auto; 
+		overflow-x: auto;
 	}
 	.view-nav-wrapper::-webkit-scrollbar {
 		display: none;
@@ -152,6 +171,7 @@
 		width: 100%;
 		position: relative;
 		background: #e5e7e8;
+		z-index: 2;
 		display: none;
 	}
 	.play-spots-title {
@@ -186,6 +206,7 @@
 		overflow: hidden;
 	}
 	.play-spots-wrapper {
+		float: left;
 		width: 100%;
 		padding: .12rem;
 	}
@@ -205,6 +226,86 @@
 		color: #212121;
 		font-size: .26rem;
 	}
-
+	.list-item-detail {
+	    position: relative;
+	    top: .06rem;
+	    overflow: hidden;
+	    max-height: .58rem;
+	    margin-right: 1rem;
+	    padding-top: .06rem;
+	    line-height: .24rem;
+	    font-size: 0;
+	}
+	.list-item-icon {
+		float: left;
+		width: 1.6rem;
+		height: 1.6rem;
+		margin: .2rem;
+	}
+	.list-item-img {
+		width: 1.6rem;
+		height: 1.6rem;
+	}
+	.list-item-describe {
+		position: relative;
+		float: right;
+		width: 4.2rem;
+		height: 1.6rem;
+		padding: .2rem .2rem .2rem 0;
+		border-bottom: .01rem solid rgba(229, 231, 232, 0.55);
+	}
+	.list-item-title {
+		height: .72rem;
+		line-height: .36rem;
+		font-size: .3rem;
+		color: #212121;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.list-item-origin {
+		display: inline-block;
+		padding: 0 .1rem;
+		font-size: .24rem;
+		color: #00bcd4;;
+	}
+	.without-expenses, .without-shopping {
+		display: inline-block;
+	    padding: 0 .1rem;
+	    font-size: .24rem;
+	    color: #616161;
+	}
+	.item-price {
+		position: absolute;
+	    right: .2rem;
+	    bottom: .48rem;
+	    height: .32rem;
+	    line-height: .32rem;
+	    color: #9e9e9e;
+	    text-align: right;
+	}
+	.item-price em {
+		font-size: .32rem;
+	}
+    .RMB {
+    	font-size: .22rem;
+	    font-weight: bold;
+	    color: #ff8300;
+    }
+	.item-price-mark {
+		font-size: .24rem;
+    	padding-left: .02rem;
+	}
+	.sold {
+		position: absolute;
+	    left: -.1rem;
+	    bottom: .2rem;
+	    width: 100%;
+	    font-size: 0;
+	    color: #9e9e9e;
+	} 
+    .sold-count {
+    	padding: 0 .1rem;
+    	font-size: .22rem;
+    }
     
 </style>

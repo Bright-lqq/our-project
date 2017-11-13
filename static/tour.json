@@ -1,0 +1,99 @@
+{
+	"ret": true,
+	"data": {
+		"viewInfo": [
+			{
+				"id": 1,
+				"viewName": "八达岭长城",
+				"link": "/"
+			},{
+				"id": 2,
+				"viewName": "古北水镇",
+				"link": "/"
+			},{
+				"id": 3,
+				"viewName": "故宫",
+				"link": "/"
+			},{
+				"id": 4,
+				"viewName": "司马台长城",
+				"link": "/"
+			},{
+				"id": 5,
+				"viewName": "鸟巢",
+				"link": "/"
+			},{
+				"id": 6,
+				"viewName": "天安门广场",
+				"link": "/"
+			},{
+				"id": 7,
+				"viewName": "八达岭长城",
+				"link": "/"
+			}
+		],
+		"itemInfo": [
+			{
+				"id": 8,
+				"imgUrl": "http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg",
+				"title": "【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！",
+				"origin": "北京出发",
+				"expenses": "无自费",
+				"shopping": "无购物",
+				"RMB": 45,
+				"priceMark": "起",
+				"sold": "已售6898"
+			},{
+				"id": 9,
+				"imgUrl": "http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg",
+				"title": "【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！",
+				"origin": "北京出发",
+				"expenses": "无自费",
+				"shopping": "无购物",
+				"RMB": 45,
+				"priceMark": "起",
+				"sold": "已售6898"
+			},{
+				"id": 10,
+				"imgUrl": "http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg",
+				"title": "【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！",
+				"origin": "北京出发",
+				"expenses": "无自费",
+				"shopping": "无购物",
+				"RMB": 45,
+				"priceMark": "起",
+				"sold": "已售6898"
+			},{
+				"id": 11,
+				"imgUrl": "http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg",
+				"title": "【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！",
+				"origin": "北京出发",
+				"expenses": "无自费",
+				"shopping": "无购物",
+				"RMB": 45,
+				"priceMark": "起",
+				"sold": "已售6898"
+			},{
+				"id": 12,
+				"imgUrl": "http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg",
+				"title": "【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！",
+				"origin": "北京出发",
+				"expenses": "无自费",
+				"shopping": "无购物",
+				"RMB": 45,
+				"priceMark": "起",
+				"sold": "已售6898"
+			},{
+				"id": 13,
+				"imgUrl": "http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg",
+				"title": "【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！",
+				"origin": "北京出发",
+				"expenses": "无自费",
+				"shopping": "无购物",
+				"RMB": 45,
+				"priceMark": "起",
+				"sold": "已售6898"
+			}
+		]
+	}
+}
