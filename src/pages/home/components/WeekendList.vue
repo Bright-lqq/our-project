@@ -3,7 +3,7 @@
         <h2 class="modtitle">周末去哪儿</h2>
             <div>
                 <router-link to="../activity">
-                    <div class="product-item" v-for="list in weekendlist" :key="list.id">
+                    <div class="product-item" v-for="list in weekendInfo" :key="list.id">
                         <a href="#" class="fulllink">
                             <div class="product-imgcontainer image-ready">
                                 <img :src="list.src" :alt="list.tip" />
@@ -15,17 +15,6 @@
                         </a>
                     </div>
                 </router-link>
-                <div class="product-item" v-for="list in weekendInfo" :key="list.id">
-                    <a href="#" class="fulllink">
-                        <div class="product-imgcontainer image-ready">
-                            <img :src="list.src" :alt="list.tip" />
-                        </div>
-                        <div class="product-info">
-                            <p class="product-name">{{list.name}}</p>
-                            <p class="product-desc">{{list.article}}</p>
-                        </div>
-                    </a>
-                </div>
             </div>
     </div>
 </template>
