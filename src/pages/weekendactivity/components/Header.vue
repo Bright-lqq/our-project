@@ -1,70 +1,47 @@
 <template>
-    <header class="header">
-        <a class="header-black">
-            <span class="iconfont-head iconfont icon-return"></span>
+    <div class="activity-header">
+        <a class="activity-header-left" href = "">
+            <i class="iconfont icon-return"></i>
         </a>
-        <h1>温泉5折起，精挑细选温泉清单</h1>
-        <router-link to="/">
-            <a class="header-bar header-logo">
-                <span class="iconfont-head iconfont icon-06"></span>
-                首页
-            </a>
-        </router-link>
-    </header>
+        <h1 class="activity-header-title">北京温泉排行榜</h1>
+    </div>
 </template>
-<style>
-.header {
-    position: relative;
-    background: #1ba9ba;
-    text-align: center;
-    color: #fff;
-    border-bottom: #1b7a8b .02rem solid;
-    height: .88rem;
-    line-height: .88rem;
+
+<script>
+
+
+</script>
+
+<style scoped>
+.activity-header {
+	position: relative;
+	height: .88rem;
+	background: #00bcd4;
+	z-index: 91;
 }
-.header a {
-    color: #fff;
+.activity-header-left {
+	left: 0;
+	top: 0;
+	width: .8rem;
+	height: .88rem;
+	line-height: .88rem;
+	position: absolute;
+	font-size: .36rem;
+	color: #fff;
+	text-align: center;
+	float: left;
 }
-.header-black {
-    position: absolute;
-    top: 0;
-    width: .88rem;
-    height: .88rem;
-    left: 0;
-    font-size: .32rem;
-}
-.iconfont-head {
-    display: inline-block;
-    width: .88rem;
-    height: .88rem;
-    font-size: .36rem;
-    line-height: .88rem;
-    text-decoration: none;
-}
-.header h1{
-    overflow: hidden;
-    margin: 0 1rem;
-    font-weight: normal;
-    font-size: .32rem;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-.header-logo {
-    line-height: .36rem;
-}
-.header-bar {
-    right: 0;
-    font-size: .24rem;
-    position: absolute;
-    top: 0;
-    width: .88rem;
-    height: .88rem;
-}
-.header-logo .iconfont-head {
-    display: block;
-    height: auto;
-    padding-top: .1rem;
-    line-height: 1;
+.activity-header-title {
+	width:4.4rem;
+	height: .88rem;
+	overflow: hidden;
+	margin: 0 1rem;
+	line-height: .88rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: .32rem;
+	text-align: center;
+	color: #fff;
 }
 </style>
 

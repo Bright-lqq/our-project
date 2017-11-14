@@ -6,7 +6,7 @@
                 <div class="swipe-wrap">
                     <div class="swipe-item" v-for="innerItem in item" :key="innerItem.id">
                         <div class="category-item">
-                            <a>
+                            <a :href="innerItem.link">
                                 <div class="category-img-container">
                                     <img :src="innerItem.src">
                                 </div>

@@ -5,21 +5,6 @@
 				<li class="view-nav-item" v-for="item in viewInfo" :key="item.id">
 					<a :href="item.link" class="nav-item-link">{{item.viewName}}</a>
 				</li>
-				<!-- <li class="view-nav-item">
-					<a href="" class="nav-item-link">古北水镇</a>
-				</li>
-				<li class="view-nav-item">
-					<a href="" class="nav-item-link">故宫</a>
-				</li>
-				<li class="view-nav-item">
-					<a href="" class="nav-item-link">司马台长城</a>
-				</li>
-				<li class="view-nav-item">
-					<a href="" class="nav-item-link">鸟巢</a>
-				</li>
-				<li class="view-nav-item">
-					<a href="" class="nav-item-link">天安门广场</a>
-				</li> -->
 			</ul>
 			<span class="spread" @click="handleSpreadClick">
 				<i class="iconfont icon-down-trangle-copy-copy1"></i>
@@ -32,21 +17,6 @@
 					<li class="play-spots-item" v-for="item in viewInfo" :key="item.id">
 						<a :href="item.link" class="spots-item-link">{{item.viewName}}</a>
 					</li>
-					<!-- <li class="play-spots-item">
-						<a href="" class="spots-item-link">古北水镇</a>
-					</li>
-					<li class="play-spots-item">
-						<a href="" class="spots-item-link">故宫</a>
-					</li>
-					<li class="play-spots-item">
-						<a href="" class="spots-item-link">司马台长城</a>
-					</li>
-					<li class="play-spots-item">
-						<a href="" class="spots-item-link">鸟巢</a>
-					</li>
-					<li class="play-spots-item">
-						<a href="" class="spots-item-link">天安门广场</a>
-					</li> -->
 				</ul>
 			</div>
 			<span class="retract" @click="handleRetractClick">
