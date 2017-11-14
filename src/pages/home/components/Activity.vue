@@ -28,8 +28,6 @@
 	</div>
 </template>
 
-<script>
-</script>
 
 <style scoped>
 	.listitem-con {

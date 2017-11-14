@@ -60,7 +60,6 @@
 		
 		computed: {
 			viewInfo() {
-				console.log(1);
 				return this.$store.state.tour.viewInfo
 			},
 			itemInfo() {

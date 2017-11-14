@@ -1,16 +1,16 @@
 <template>
-	<header class="mp-header">
-		<a class="mp-header-left">
+	<header class="header">
+		<a class="header-left">
 			<i class="iconfont icon-return"></i>
 		</a>
 		<router-link to="/suggest">
-			<div class="mp-header-title">
+			<div class="header-title">
 				<i class="iconfont icon-sousuo"></i>
 				输入城市/景点/游玩主题
 			</div>
 		</router-link>
-		<div class="mp-header-right" mp-role="right">
-			<a href="/touch/toNewCityList.htm" title="城市选择" class="mp-linkarea">
+		<div class="header-right" role="right">
+			<a href="/touch/toNewCityList.htm" title="城市选择" class="linkarea">
 			北京
 			</a>
 		</div>
@@ -18,13 +18,8 @@
 	</header>
 </template>
 
-<script>
-
-
-</script>
-
 <style scoped>
-	.mp-header{
+	.header{
 		position: relative;
 		display: box;
 		width: 100%;
@@ -33,7 +28,7 @@
 		text-align: center;
 		color: #fff;
 	}
-	.mp-header-left{
+	.header-left{
 		float: left;
 		width: .4rem;
 		line-height: .44rem;
@@ -42,7 +37,7 @@
 		font-size: .36rem;
 		text-align: left;
 	}
-	.mp-header-title {
+	.header-title {
 		position:absolute;
 		top:.14rem;
 		left:.8rem;
@@ -52,12 +47,12 @@
 		color:#ccc;
 		border-radius: .06rem;
 	}
-	.mp-header-right{
+	.header-right{
 		width:1.28rem;
 		float: right;
 		line-height: .88rem;
 	}
-	.mp-linkarea{
+	.linkarea{
 		color:#fff;
 		display:block;
 		width:.8rem;

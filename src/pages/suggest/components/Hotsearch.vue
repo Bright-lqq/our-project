@@ -2,7 +2,7 @@
 	<div class="hot-search">
 		<div class="hot-search-head">
 			<span class="hot-search-head-title">热门搜索</span>
-			<span class="hot-search-head-change" @click="handleChangeClick()">
+			<span class="hot-search-head-change" @click="handleChangeClick">
 				<i class="iconfont icon-iconfontrefresh"></i>
 				换一批
 			</span>

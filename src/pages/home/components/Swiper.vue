@@ -66,5 +66,4 @@
     .home-swiper-img-con {
         width: 100%;
     }
-    
 </style>

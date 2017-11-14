@@ -31,118 +31,119 @@
 		</div>
 	</div>
 </template>
+
 <script>
-export default {
-	props: ["CommentImg"]
-}
+	export default {
+		props: ["CommentImg"]
+	}
 </script>
 
 <style scoped>
-.comment-container {
-	margin-top: .2rem;
-	position: relative;
-}
-.comment-title {
-	padding: 0 .2rem;
-	height: .88rem;
-	background: #fff;
-	color: #333;
-	font-size: .3rem;
-	line-height: .88rem;
-	text-indent: .2rem;
-}
-.comment-title::after {
-	content: " ";
-	position: absolute;
-	top: .33rem;
-	left: .2rem;
-	width: .06rem;
-	height: .25rem;
-	background: #1ba9ba;
-	border-radius: .04rem;
-}
-.comment-item {
-	padding: .1rem .2rem .3rem .2rem;
-}
-.starlevel {
-	color: #00bcd4;
-} 
-.comment-list {
-	background: #fff;
-}
-.comment-stardate {
-	margin-top: .1rem;
-	line-height: .6rem;
-	font-size: .28rem;
-}
-.border-top {
-	border-top: .02rem solid #e0e0e0;
-}
-.starlevel-icon {
-	font-size: .25rem;
-}
-.comment-date {
-	position: relative;
-	float: right;
-	top: .16rem;
-	margin-left: .2rem;
-	line-height: .28rem;
-	font-size: .24rem;
-	vertical-align: middle;
-	color: #212121;
-}
-.comment-imgs {
-	margin: .2rem 0 .1rem 0;
-	position: relative;
-	zoom: 1;
-	overflow: hidden;
-}
-.comment-imginner {
-	margin-left: .07rem;
-	margin-right: .07rem;
-	width: 30%;
-	margin-bottom: .1rem;
-	float: left;
-}
-.comment-img {
-	width: 100%;
-	float: left;
-}
-.comment-tagnum {
-	position: absolute;
-	right: .07rem;
-	height: .4rem;
-	width: .94rem;
-	line-height: .4rem;
-	font-size: .24rem;
-	color: #fff;
-	text-align: right;
-	padding-right: .05rem;
-}
-.commenttag-bg {
-	position: absolute;
-	right: .07rem;
-	display: inline-block;
-	background: #000;
-	opacity: .5;
-	height: .4rem;
-	width: .94rem;
-	border-top-left-radius: .2rem;
-	border-bottom-left-radius: .2rem;
-}
-.comment-imgnumtag {
-	position: absolute;
-	bottom: .8rem;
-	right: 0;
-}
-.more-refresh {
-	position: relative; 
-	margin-top: -.02rem;
-	height: .8rem;
-	background: #fff;
-	color: #616161;
-	line-height: .8rem;
-	text-align: center;
-	z-index: 2;
-}
+	.comment-container {
+		margin-top: .2rem;
+		position: relative;
+	}
+	.comment-title {
+		padding: 0 .2rem;
+		height: .88rem;
+		background: #fff;
+		color: #333;
+		font-size: .3rem;
+		line-height: .88rem;
+		text-indent: .2rem;
+	}
+	.comment-title::after {
+		content: " ";
+		position: absolute;
+		top: .33rem;
+		left: .2rem;
+		width: .06rem;
+		height: .25rem;
+		background: #1ba9ba;
+		border-radius: .04rem;
+	}
+	.comment-item {
+		padding: .1rem .2rem .3rem .2rem;
+	}
+	.starlevel {
+		color: #00bcd4;
+	} 
+	.comment-list {
+		background: #fff;
+	}
+	.comment-stardate {
+		margin-top: .1rem;
+		line-height: .6rem;
+		font-size: .28rem;
+	}
+	.border-top {
+		border-top: .02rem solid #e0e0e0;
+	}
+	.starlevel-icon {
+		font-size: .25rem;
+	}
+	.comment-date {
+		position: relative;
+		float: right;
+		top: .16rem;
+		margin-left: .2rem;
+		line-height: .28rem;
+		font-size: .24rem;
+		vertical-align: middle;
+		color: #212121;
+	}
+	.comment-imgs {
+		margin: .2rem 0 .1rem 0;
+		position: relative;
+		zoom: 1;
+		overflow: hidden;
+	}
+	.comment-imginner {
+		margin-left: .07rem;
+		margin-right: .07rem;
+		width: 30%;
+		margin-bottom: .1rem;
+		float: left;
+	}
+	.comment-img {
+		width: 100%;
+		float: left;
+	}
+	.comment-tagnum {
+		position: absolute;
+		right: .07rem;
+		height: .4rem;
+		width: .94rem;
+		line-height: .4rem;
+		font-size: .24rem;
+		color: #fff;
+		text-align: right;
+		padding-right: .05rem;
+	}
+	.commenttag-bg {
+		position: absolute;
+		right: .07rem;
+		display: inline-block;
+		background: #000;
+		opacity: .5;
+		height: .4rem;
+		width: .94rem;
+		border-top-left-radius: .2rem;
+		border-bottom-left-radius: .2rem;
+	}
+	.comment-imgnumtag {
+		position: absolute;
+		bottom: .8rem;
+		right: 0;
+	}
+	.more-refresh {
+		position: relative; 
+		margin-top: -.02rem;
+		height: .8rem;
+		background: #fff;
+		color: #616161;
+		line-height: .8rem;
+		text-align: center;
+		z-index: 2;
+	}
 </style>

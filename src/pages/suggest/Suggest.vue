@@ -27,7 +27,6 @@
 
 		computed: mapState({
 			hotviewInfo: (state) => {
-				console.log(state);
 				return state.suggest.hotviewInfo;
 			}
 		}),

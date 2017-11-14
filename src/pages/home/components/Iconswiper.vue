@@ -1,6 +1,5 @@
 <template>
     <swiper :options="swiperOption">
-        <!-- slides -->
         <swiper-slide v-for="(item, index) in abc" :key="index">
             <div class="category-container swipe">
                 <div class="swipe-wrap">
@@ -23,27 +22,29 @@
 <script>
     import { swiper, swiperSlide } from 'vue-awesome-swiper';
     import {mapGetters} from 'vuex';
-    export default {
-    name: 'carrouse',
-    data() {
-        return {
-            swiperOption: {
-                direction: 'horizontal',
-                autoHeight: true,
-                pagination:'.home-swiper-pagination',
-                bulletClass : 'my-bullet',
-                bulletActiveClass: 'bullet-active',
-                observeParents: true,
-                    }
-                }
-            },
-            computed: mapGetters(['abc']),
 
-            components: {
-                swiper,
-                swiperSlide
+    export default {
+        name: 'carrouse',
+        data() {
+            return {
+                swiperOption: {
+                    direction: 'horizontal',
+                    autoHeight: true,
+                    pagination:'.home-swiper-pagination',
+                    bulletClass : 'my-bullet',
+                    bulletActiveClass: 'bullet-active',
+                    observeParents: true,
+                }
             }
+        },
+
+        computed: mapGetters(['abc']),
+
+        components: {
+            swiper,
+            swiperSlide
         }
+    }
 </script>
 <style>
     .category-container {

@@ -7,11 +7,6 @@
     </div>
 </template>
 
-<script>
-
-
-</script>
-
 <style scoped>
 .activity-header {
 	position: relative;

@@ -17,7 +17,6 @@ export default {
 		},
 		[ADD_LIST_DATA](state, payload) {
 			state.historyInfo.push(payload);
-			console.log(state.historyInfo)
 		}
 	},
 	

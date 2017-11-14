@@ -53,121 +53,120 @@
 </script>
 
 <style scoped>
-
-#wrapper {
-	height: 4rem;
-	overflow: hidden;
-}
-.promote {
-	position: relative;
-	background: #fff;
-	margin-bottom: .2rem;
-}
-.ticket-type {
-	overflow: hidden;
-	position: relative;
-	margin-bottom: -.02rem;
-	padding: 0 .2rem;
-	height: .88rem;
-	line-height: .88rem;
-	color: #333;
-	font-size: .32rem;
-}
-.promote-icon {
-	font-size: .4rem;
-	color: #ff6b62;
-}
-.ticket-item {
-	padding: .2rem .2rem .24rem .2rem;
-	box-sizing: border-box;
-	display: flex;	
-}
-.ticket-main {
-	display: flex;
-	align-items: center;
-	flex: 2.92rem;
-}
-.border-top {
-	border-top: 1px solid #eee;
-}
-.ticket-title {
-	margin-right: .1rem;
-	line-height: .52rem;
-	font-size: .3rem;
-	color: #333;
-}
-.ticket-light {
-	padding: .04rem 0 .08rem 0;
-	font-size: .1rem;
-}
-.ticket-icon {
-	font-size: .1rem;
-}
-.ticket-sale {
-	display: block;
-	overflow: hidden;
-	height: .32rem;
-	font-size: .24rem;
-	line-height: .28rem;
-	text-align: center;
-	color: #ff9800;
-}
-.ticket-desctag {
-	margin-left: .2rem;
-}
-.ticket-light {
-	padding: .04rem 0 .08rem 0;
-	overflow: hidden;
-}
-.ticket-side {
-	display: flex;
-	align-items: center;
-	flex: 1;
-	border-left: 1px solid #eee;
-}
-.price-num {
-	margin-left: .04rem;
-	font-size: .32rem;
-	line-height: .3rem;
-}
-.ticket-btn {
-	display: block;
-	background: #ff9800;
-	height: .6rem;
-	color: #fff;
-	font-size: .28rem;
-	line-height: .6rem;
-	text-align: center;
-	border-radius: .1rem;
-} 
-.ticket-link {
-	box-sizing: border-box;
-	display: block;
-	width: 100%;
-	padding-left: .2rem;
-}
-.ticket-detail {
-	padding: .04rem 0 .08rem 0;
-	overflow: hidden;
-}
-.ticket-tag {
-	overflow: hidden;
-	float: left;
-	margin: .04rem .06rem .04rem 0;
-	padding: 0 .04rem;
-	color: #ff6b62;
-	font-size: .24rem;
-	white-space: nowrap;
-	border-radius: 2px;
-}
-.price-num {
-	line-height: .24rem;
-	font-size: .24rem;
-}
-.price-num2 {
-	font-size: .36rem;
-}
-.ticket-redpacket {
-	border: .02rem solid #ff6b62;
-}
+	#wrapper {
+		height: 4rem;
+		overflow: hidden;
+	}
+	.promote {
+		position: relative;
+		background: #fff;
+		margin-bottom: .2rem;
+	}
+	.ticket-type {
+		overflow: hidden;
+		position: relative;
+		margin-bottom: -.02rem;
+		padding: 0 .2rem;
+		height: .88rem;
+		line-height: .88rem;
+		color: #333;
+		font-size: .32rem;
+	}
+	.promote-icon {
+		font-size: .4rem;
+		color: #ff6b62;
+	}
+	.ticket-item {
+		padding: .2rem .2rem .24rem .2rem;
+		box-sizing: border-box;
+		display: flex;	
+	}
+	.ticket-main {
+		display: flex;
+		align-items: center;
+		flex: 2.92rem;
+	}
+	.border-top {
+		border-top: 1px solid #eee;
+	}
+	.ticket-title {
+		margin-right: .1rem;
+		line-height: .52rem;
+		font-size: .3rem;
+		color: #333;
+	}
+	.ticket-light {
+		padding: .04rem 0 .08rem 0;
+		font-size: .1rem;
+	}
+	.ticket-icon {
+		font-size: .1rem;
+	}
+	.ticket-sale {
+		display: block;
+		overflow: hidden;
+		height: .32rem;
+		font-size: .24rem;
+		line-height: .28rem;
+		text-align: center;
+		color: #ff9800;
+	}
+	.ticket-desctag {
+		margin-left: .2rem;
+	}
+	.ticket-light {
+		padding: .04rem 0 .08rem 0;
+		overflow: hidden;
+	}
+	.ticket-side {
+		display: flex;
+		align-items: center;
+		flex: 1;
+		border-left: 1px solid #eee;
+	}
+	.price-num {
+		margin-left: .04rem;
+		font-size: .32rem;
+		line-height: .3rem;
+	}
+	.ticket-btn {
+		display: block;
+		background: #ff9800;
+		height: .6rem;
+		color: #fff;
+		font-size: .28rem;
+		line-height: .6rem;
+		text-align: center;
+		border-radius: .1rem;
+	} 
+	.ticket-link {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		padding-left: .2rem;
+	}
+	.ticket-detail {
+		padding: .04rem 0 .08rem 0;
+		overflow: hidden;
+	}
+	.ticket-tag {
+		overflow: hidden;
+		float: left;
+		margin: .04rem .06rem .04rem 0;
+		padding: 0 .04rem;
+		color: #ff6b62;
+		font-size: .24rem;
+		white-space: nowrap;
+		border-radius: 2px;
+	}
+	.price-num {
+		line-height: .24rem;
+		font-size: .24rem;
+	}
+	.price-num2 {
+		font-size: .36rem;
+	}
+	.ticket-redpacket {
+		border: .02rem solid #ff6b62;
+	}
 </style>

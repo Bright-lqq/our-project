@@ -35,102 +35,102 @@
 </script>
 
 <style scoped>
-.recommend-container {
-	margin-top: .2rem;
-	margin-bottom: .4rem;
-	position: relative;
-}
-.recommend-title {
-	padding: 0 .2rem;
-	height: .88rem;
-	background: #fff;
-	color: #333;
-	font-size: .3rem;
-	line-height: .88rem;
-	text-indent: .2rem;
-}
-.border-bottom {
-	border-bottom:.02rem solid #dadada;
-}
-.recommend-title::after {
-	content: " ";
-	position: absolute;
-	top: .33rem;
-	left: .2rem;
-	width: .06rem;
-	height: .25rem;
-	background: #1ba9ba;
-	border-radius: .04rem;
-}
-.recommend-list {
-	overflow: hidden;
-	background: #fff;
-}
-.recommend-img {
-	margin: .2rem .2rem 0 .2rem;
-	width: 1.62rem;
-	height: 1.62rem;
-	float: left;
-}
-.recommend-info {
-	position: relative;
-	padding-top: .2rem;
-	margin-left: 2.02rem;
-	height: 1.8rem;
-}
-.recommend-sight {
-	height: .4rem;
-	line-height: .4rem;
-	font-size: .3rem;
-	color: #212121;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-.recomment-sightstar {
-	color: #adadad;
-}
-.recommend-price {
-	position: absolute;
-	right: .2rem;
-	top: .2rem;
-	line-height: .4rem;
-	font-size: .2rem;
-	vertical-align: baseline;
-	color: #ff9800;
-}
-.price-num {
-	font-size: .36rem;
-}
-.recommend-flag {
-	color: #9e9e9e;
-}
-.starlevel {
-	color: #00bcd4;
-}
-.recommend-comment {
-	margin-top: .4rem;
-}
-.starlevel-icon {
-	font-size: .2rem;
-}
-.recommend-commentnum {
-	margin-left: .1rem;
-	line-height: .28rem;
-	font-size: .24rem;
-	vertical-align: middle;
-	color: #9e9e9e;
-}
-.recommend-position {
-	position: absolute;
-	bottom: .24rem;
-	left: 0;
-	color: #9e9e9e;
-	font-size: .24rem;
-}
-.recommend-subposition {
-	padding: .04rem .04rem 0 .1rem;
-	color: #9e9e9e;
-	font-size: .24rem;
-}
+	.recommend-container {
+		margin-top: .2rem;
+		margin-bottom: .4rem;
+		position: relative;
+	}
+	.recommend-title {
+		padding: 0 .2rem;
+		height: .88rem;
+		background: #fff;
+		color: #333;
+		font-size: .3rem;
+		line-height: .88rem;
+		text-indent: .2rem;
+	}
+	.border-bottom {
+		border-bottom:.02rem solid #dadada;
+	}
+	.recommend-title::after {
+		content: " ";
+		position: absolute;
+		top: .33rem;
+		left: .2rem;
+		width: .06rem;
+		height: .25rem;
+		background: #1ba9ba;
+		border-radius: .04rem;
+	}
+	.recommend-list {
+		overflow: hidden;
+		background: #fff;
+	}
+	.recommend-img {
+		margin: .2rem .2rem 0 .2rem;
+		width: 1.62rem;
+		height: 1.62rem;
+		float: left;
+	}
+	.recommend-info {
+		position: relative;
+		padding-top: .2rem;
+		margin-left: 2.02rem;
+		height: 1.8rem;
+	}
+	.recommend-sight {
+		height: .4rem;
+		line-height: .4rem;
+		font-size: .3rem;
+		color: #212121;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.recomment-sightstar {
+		color: #adadad;
+	}
+	.recommend-price {
+		position: absolute;
+		right: .2rem;
+		top: .2rem;
+		line-height: .4rem;
+		font-size: .2rem;
+		vertical-align: baseline;
+		color: #ff9800;
+	}
+	.price-num {
+		font-size: .36rem;
+	}
+	.recommend-flag {
+		color: #9e9e9e;
+	}
+	.starlevel {
+		color: #00bcd4;
+	}
+	.recommend-comment {
+		margin-top: .4rem;
+	}
+	.starlevel-icon {
+		font-size: .2rem;
+	}
+	.recommend-commentnum {
+		margin-left: .1rem;
+		line-height: .28rem;
+		font-size: .24rem;
+		vertical-align: middle;
+		color: #9e9e9e;
+	}
+	.recommend-position {
+		position: absolute;
+		bottom: .24rem;
+		left: 0;
+		color: #9e9e9e;
+		font-size: .24rem;
+	}
+	.recommend-subposition {
+		padding: .04rem .04rem 0 .1rem;
+		color: #9e9e9e;
+		font-size: .24rem;
+	}
 </style>

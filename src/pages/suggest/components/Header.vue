@@ -14,11 +14,7 @@
 				<span class="search-suggest">搜索建议</span>
 				<span class="close">关闭</span>
 			</div>
-			<ul class="connect-content">
-				<li class="" >
-					<a></a>
-				</li>
-			</ul>
+			<div class="connect-content"></div>
 		</div>
 		
 	</header>

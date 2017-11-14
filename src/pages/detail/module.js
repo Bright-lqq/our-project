@@ -1,5 +1,6 @@
 import axios from "axios";
 import { SET_DATA, AJAX_GET_DATA } from './types.js';
+
 export default {
 	state: {
 		promoteInfo: [],
