@@ -1,56 +1,57 @@
 <template>
-    <div>
-        <div class="module-outer super-prefer">
-            <div class="caption-outer">
-                <div class="caption-inner">
-                    <div class="caption-wrap">
-                        <div class="caption-txt">省心一日游</div>
-                    </div>
+<div>
+    <div class="module-outer super-prefer">
+        <div class="caption-outer">
+            <div class="caption-inner">
+                <div class="caption-wrap">
+                    <div class="caption-txt">省心一日游</div>
                 </div>
             </div>
-            <ul class="tag-list">
-                <li  class="tag-item">
-                    <div class="tag-inner">家庭</div>
-                </li>
-                <li  class="tag-item">
-                    <div class="tag-inner">上班族</div>
-                </li>
-                <li  class="tag-item">
-                    <div class="tag-inner">情侣</div>
-                </li>
-            </ul>
-            <div class="module-desc">再也不用担心出去玩太麻烦了，【去哪儿门票】为你精选了靠谱温泉一日游！拎包就走，想去哪儿就去哪儿！</div>
-            <ul class="grid-list clrfix">
-                <li class="grid-item" v-for="item in onedayInfo" :key="item.id">
-                    <a class="grid-link border">
-                        <div class="grid-show img-container mpg-defaultimg-small">
-                            <img :src="item.imgUrl" class="topic-img"></img>
-                            <span class="list-location">北京出发</span>
-                        </div>
-                        <div class="grid-info">
-                            <div class="grid-name ellipsis2">{{item.title}}</div>
-                            <div class="grid-sale">
-                                <span class="price">￥<em class="price-num">{{item.price}}</em></span>起
-                            </div>
-                            <div class="grid-btn">查看</div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
         </div>
+        <ul class="tag-list">
+            <li  class="tag-item">
+                <div class="tag-inner">家庭</div>
+            </li>
+            <li  class="tag-item">
+                <div class="tag-inner">上班族</div>
+            </li>
+            <li  class="tag-item">
+                <div class="tag-inner">情侣</div>
+            </li>
+        </ul>
+        <div class="module-desc">再也不用担心出去玩太麻烦了，【去哪儿门票】为你精选了靠谱温泉一日游！拎包就走，想去哪儿就去哪儿！</div>
+        <ul class="grid-list clrfix">
+            <li class="grid-item" v-for="item in onedayInfo" :key="item.id">
+                <a class="grid-link border">
+                    <div class="grid-show img-container mpg-defaultimg-small">
+                        <img :src="item.imgUrl" class="topic-img"></img>
+                        <span class="list-location">北京出发</span>
+                    </div>
+                    <div class="grid-info">
+                        <div class="grid-name ellipsis2">{{item.title}}</div>
+                        <div class="grid-sale">
+                            <span class="price">￥<em class="price-num">{{item.price}}</em></span>起
+                        </div>
+                        <div class="grid-btn">查看</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
     </div>
+</div>
 </template>
-
 <script>
-    export default {
-        computed: {
+export default {
+    computed: {
             onedayInfo() {
+
                 return this.$store.state.activity.onedayInfo
+                
             }
         }
-    }
+}
+    
 </script>
-
 <style>
     .tag-list {
         margin: .18rem 0;
@@ -238,7 +239,6 @@
         clear: both;
     }
 </style>
-
 <style scoped>
     .caption-inner::after {
         background-image: linear-gradient(to right,#ffa305,#ff431d);

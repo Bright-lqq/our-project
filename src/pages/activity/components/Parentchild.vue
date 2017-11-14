@@ -1,61 +1,62 @@
 <template>
-    <div>
-        <div class="module-outer super-prefer">
-            <div class="caption-outer">
-                <div class="caption-inner">
-                    <div class="caption-wrap">
-                        <div class="caption-txt">亲子温泉</div>
-                    </div>
+<div>
+    <div class="module-outer super-prefer">
+        <div class="caption-outer">
+            <div class="caption-inner">
+                <div class="caption-wrap">
+                    <div class="caption-txt">亲子温泉</div>
                 </div>
             </div>
-            <ul class="tag-list">
-                <li  class="tag-item">
-                    <div class="tag-inner">家庭</div>
-                </li>
-                <li  class="tag-item">
-                    <div class="tag-inner">上班族</div>
-                </li>
-                <li  class="tag-item">
-                    <div class="tag-inner">情侣</div>
-                </li>
-            </ul>
-            <div class="module-desc">带娃父母的最佳选择。宝宝玩的开心安全，爸妈泡温泉轻松省心，快陪宝宝度过一个完美周末吧！</div>
-            <ul class="dataContainer">
-                <li class="card-item"  v-for="item in parentchildInfo" :key="item.id">
-                    <a class="card-link">
-                        <div class="card-show img-container mpg-defaultimg-large">
-                            <img class="topic-img" :src="item.imgUrl"></img>
-                            <span class="list-location">北京</span>
-                        </div>
-                        <div class="card-info">
-                            <div class="card-name ellipsis2">{{item.title}}</div>
-                            <div class="card-main clrfix">
-                                <div class="card-sale price">￥<em class="price-num">{{item.price}}</em></div>
-                                <ul class="lighttxt-list">
-                                    <li class="lighttxt-item border-left lighttxt-light">{{item.characteristic1}}</li>
-                                    <li class="lighttxt-item border-left">{{item.characteristic2}}</li>
-                                    <li class="lighttxt-item border-left">{{item.characteristic3}}</li>
-                                </ul>
-                            </div>
-                            <div class="card-comment">{{item.comment}}</div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
         </div>
+        <ul class="tag-list">
+            <li  class="tag-item">
+                <div class="tag-inner">家庭</div>
+            </li>
+            <li  class="tag-item">
+                <div class="tag-inner">上班族</div>
+            </li>
+            <li  class="tag-item">
+                <div class="tag-inner">情侣</div>
+            </li>
+        </ul>
+        <div class="module-desc">带娃父母的最佳选择。宝宝玩的开心安全，爸妈泡温泉轻松省心，快陪宝宝度过一个完美周末吧！</div>
+        <ul class="dataContainer">
+            <li class="card-item"  v-for="item in parentchildInfo" :key="item.id">
+                <a class="card-link">
+                    <div class="card-show img-container mpg-defaultimg-large">
+                        <img class="topic-img" :src="item.imgUrl"></img>
+                        <span class="list-location">北京</span>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-name ellipsis2">{{item.title}}</div>
+                        <div class="card-main clrfix">
+                            <div class="card-sale price">￥<em class="price-num">{{item.price}}</em></div>
+                            <ul class="lighttxt-list">
+                                <li class="lighttxt-item border-left lighttxt-light">{{item.characteristic1}}</li>
+                                <li class="lighttxt-item border-left">{{item.characteristic2}}</li>
+                                <li class="lighttxt-item border-left">{{item.characteristic3}}</li>
+                            </ul>
+                        </div>
+                        <div class="card-comment">{{item.comment}}</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
     </div>
+</div>
 </template>
-
 <script>
-    export default {
-        computed: {
+export default {
+    computed: {
             parentchildInfo() {
+                
                 return this.$store.state.activity.parentchildInfo
+                
             }
         }
-    }
+}
+    
 </script>
-
 <style>
     .tag-list {
         margin: .18rem 0;
@@ -144,7 +145,6 @@
         border-radius: .04rem;
     }
 </style>
-
 <style scoped>
     .caption-inner::after {
         background-image: linear-gradient(to right,#32daef,#349bf2);

@@ -5,47 +5,42 @@
         </div>
     </div>
 </template>
-
 <script>
-    export default {
-        mounted() {
-            var that = this;
-            window.onscroll = function(e){
-                var e = e || window.event;
-                that.y = document.documentElement.scrollTop||document.body.scrollTop;
-                var mapTotop = document.getElementById("gotop")
-                if(that.y > 810) {
-                    mapTotop.style.display = "block";
-                }else {
-                    mapTotop.style.display = "none";
-                }
-                that.height = parseInt(document.defaultView.getComputedStyle(document.body, null)['height']);           
+export default {
+    mounted() {
+        var that = this;
+        window.onscroll = function(e){
+            var e = e || window.event;
+            that.y = document.documentElement.scrollTop||document.body.scrollTop;
+            var mapTotop = document.getElementById("gotop")
+            if(that.y > 810) {
+                mapTotop.style.display = "block";
+            }else {
+                mapTotop.style.display = "none";
             }
-            this.totalHeight =  parseInt(document.defaultView.getComputedStyle(document.body, null)['height']);
-        },
-
-        data : function() {
-            return {
-                y : 0,
-                totalHeight : 0,
-                height : 0
-            }
-        },
-
-        computed:{
-            translatey : function(){
-                return (this.y / this.height).toFixed(4)*100;
-            }
-        },
-
-        methods:{
-            handleClick : function() {
-                document.documentElement.scrollTop = 0;
-            }
+            that.height = parseInt(document.defaultView.getComputedStyle(document.body, null)['height']);           
         }
-    }
+        this.totalHeight =  parseInt(document.defaultView.getComputedStyle(document.body, null)['height']);
+    },
+    data : function() {
+        return {
+            y : 0,
+            totalHeight : 0,
+            height : 0
+        }
+    },
+    computed:{
+        translatey : function(){
+            return (this.y / this.height).toFixed(4)*100;
+        }
+    },
+    methods:{
+        handleClick : function() {
+            document.documentElement.scrollTop = 0;
+        }
+    } 
+}
 </script>
-
 <style>
     .gotop {
         position: fixed;

@@ -19,17 +19,17 @@
         </div>
     </div>
 </template>
-
 <script>
     export default {
         computed: {
-            guardianInfo() {
-                return this.$store.state.activity.guardianInfo
+                guardianInfo() {
+                    
+                    return this.$store.state.activity.guardianInfo
+                    
+                }
             }
-        }
-    }
+    }   
 </script>
-
 <style>
     .note-outer {
         padding: .2rem .3rem;

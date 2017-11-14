@@ -1,70 +1,69 @@
 <template>
-    <div>
-        <div class="module-outer">
-            <ul class="anchor-list clrfix">
-                <li class="anchor-item" v-for="item in activityInfo" :key="item.id">
-                    <span class="anchor-inner border">{{item.title}}</span>
-                </li>
-            </ul>
-            <div class="module">
-                <div class="caption-outer">
-                    <div class="caption-inner">
-                        <div class="caption-wrap">
-                            <div class="caption-txt">{{name}}</div>
-                        </div>
+<div>
+    <div class="module-outer">
+        <ul class="anchor-list clrfix">
+            <li class="anchor-item" v-for="item in activityInfo" :key="item.id">
+                <span class="anchor-inner border">{{item.title}}</span>
+            </li>
+        </ul>
+        <div class="module">
+            <div class="caption-outer">
+                <div class="caption-inner">
+                    <div class="caption-wrap">
+                        <div class="caption-txt">{{name}}</div>
                     </div>
                 </div>
             </div>
-            <div class="module-desc">{{introduce}}</div>
-            <ul class="dataContainer">
-                <li class="list-item border-top clrfix">
-                    <a class="list-link">
-                        <div class="list-show mpg-defaultimg-small">
-                            <img class="topic-img" :src="imgSrc1"></img>
-                            <span class="list-location">北京</span>
-                        </div>
-                        <div class="list-info">
-                            <div class="list-name ellipsis2">{{title1}}</div>
-                            <ul class="lighttxt-list">
-                                <li class="lighttxt-item border-left lighttxt-light">{{type1}}</li>
-                                <li class="lighttxt-item border-left">{{type2}}</li>
-                            </ul>
-                            <div class="list-price">
-                                <span class="list-sale price">￥<em class="price-num">{{price1}}</em></span>
-                                <span class="list-cost price"><em class="price-num">{{originalPrice1}}</em></span>
-                            </div>
-                            <div class="list-btn">马上抢</div>
-                        </div>
-                    </a>
-                    <div class="list-favorite"></div>
-                </li>
-                <li class="list-item border-top clrfix">
-                    <a class="list-link">
-                        <div class="list-show mpg-defaultimg-small">
-                            <img class="topic-img" :src="imgSrc2"></img>
-                            <span class="list-location">北京</span>
-                        </div>
-                        <div class="list-info">
-                            <div class="list-name ellipsis2">{{title2}}</div>
-                            <ul class="lighttxt-list">
-                                <li class="lighttxt-item border-left lighttxt-light">{{type3}}</li>
-                                <li class="lighttxt-item border-left">{{type4}}</li>
-                            </ul>
-                            <div class="list-price">
-                                <span class="list-sale price">￥<em class="price-num">{{price2}}</em></span>
-                                <span class="list-cost price"><em class="price-num">{{originalPrice2}}</em></span>
-                            </div>
-                            <div class="list-btn">马上抢</div>
-                        </div>
-                    </a>
-                    <div class="list-favorite"></div>
-                </li>
-            </ul>
         </div>
-        <ul class="entrance-list"></ul>
+        <div class="module-desc">{{introduce}}</div>
+        <ul class="dataContainer">
+            <li class="list-item border-top clrfix">
+                <a class="list-link">
+                    <div class="list-show mpg-defaultimg-small">
+                        <img class="topic-img" :src="imgSrc1"></img>
+                        <span class="list-location">北京</span>
+                    </div>
+                    <div class="list-info">
+                        <div class="list-name ellipsis2">{{title1}}</div>
+                        <ul class="lighttxt-list">
+                            <li class="lighttxt-item border-left lighttxt-light">{{type1}}</li>
+                            <li class="lighttxt-item border-left">{{type2}}</li>
+                        </ul>
+                        <div class="list-price">
+                            <span class="list-sale price">￥<em class="price-num">{{price1}}</em></span>
+                            <span class="list-cost price"><em class="price-num">{{originalPrice1}}</em></span>
+                        </div>
+                        <div class="list-btn">马上抢</div>
+                    </div>
+                </a>
+                <div class="list-favorite"></div>
+            </li>
+            <li class="list-item border-top clrfix">
+                <a class="list-link">
+                    <div class="list-show mpg-defaultimg-small">
+                        <img class="topic-img" :src="imgSrc2"></img>
+                        <span class="list-location">北京</span>
+                    </div>
+                    <div class="list-info">
+                        <div class="list-name ellipsis2">{{title2}}</div>
+                        <ul class="lighttxt-list">
+                            <li class="lighttxt-item border-left lighttxt-light">{{type3}}</li>
+                            <li class="lighttxt-item border-left">{{type4}}</li>
+                        </ul>
+                        <div class="list-price">
+                            <span class="list-sale price">￥<em class="price-num">{{price2}}</em></span>
+                            <span class="list-cost price"><em class="price-num">{{originalPrice2}}</em></span>
+                        </div>
+                        <div class="list-btn">马上抢</div>
+                    </div>
+                </a>
+                <div class="list-favorite"></div>
+            </li>
+        </ul>
+    </div>
+    <ul class="entrance-list"></ul>
     </div>
 </template>
-
 <script>
     export default {
         data() {
@@ -85,7 +84,6 @@
 				originalPrice2: "票面价￥298"
             }
         },
-        
         computed: {
             activityInfo() {
                 return this.$store.state.activity.activityInfo
@@ -93,7 +91,6 @@
         }
     }
 </script>
-
 <style>
     .module-outer {
         margin: .2rem 0;
@@ -114,9 +111,6 @@
         float: left;
         margin-bottom: .2rem;
         width: 33.33%;
-    }
-    .anchor-inner:first-child {
-        color: #ff8a00;
     }
     .anchor-inner {
         display: block;
@@ -379,8 +373,11 @@
     .entrance-list {
         margin: .2rem;
     }
-    </style>
-    <style scoped>
+</style>
+<style scoped>
+    .anchor-inner:first-child {
+        color: #ff8a00;
+    }
     .caption-inner::after {
         background-image: linear-gradient(to right,#ffa305,#ff431d);
     }

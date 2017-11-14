@@ -11,10 +11,8 @@
         <activity-coupon :show="couponShow" v-on:close="handleCouponClose"></activity-coupon>
     </div>
 </template>
-
 <script>
-    import coupon from "./Coupon"
-
+    import coupon from "./Coupon.vue";
     export default {
         data() {
             return {
@@ -23,7 +21,6 @@
         },
         methods: {
             handleClick() {
-                console.log(1)
                 this.couponShow = true;
             },
             handleCouponClose() {
@@ -35,7 +32,6 @@
         }
     }
 </script>
-
 <style>
     .coupon-module {
         margin-bottom: .2rem;

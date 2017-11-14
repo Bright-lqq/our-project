@@ -21,6 +21,8 @@ export default {
 			state.onedayInfo = payload.onedayInfo;
 			state.guardianInfo = payload.guardianInfo;
 			state.cityInfo = payload.cityInfo;
+			
+
 		}
 	},
 	actions: {
@@ -31,4 +33,6 @@ export default {
 				})
 		}
 	}
+
+	
 }

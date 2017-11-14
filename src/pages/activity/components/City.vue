@@ -1,85 +1,80 @@
 <template>
-    <div v-show="show">
-        <div class="mask"></div>
-        <div class="dialog-outer dialog-area">
-            <div class="area-more">
-                <div class="area-type">热门省份</div>
-                <template v-if="cityInfo.length !== 0">
-                    <ul class="clrfix">
-                        <li class="area-item flexbox-layout" v-for="item in cityInfo[0].hotcity" :key="item.id">
-                            <span class="area-inner">{{item.city}}</span>
-                        </li>
-                    </ul>
-                    <div class="area-type">华北</div>
-                    <ul class="clrfix">
-                        <li class="area-item flexbox-layout" v-for="item in cityInfo[1].northchina" :key="item.id">
-                            <span class="area-inner">{{item.city}}</span>
-                        </li>
-                    </ul>
-                    <div class="area-type">东北</div>
-                    <ul class="clrfix">
-                        <li class="area-item flexbox-layout" v-for="item in cityInfo[2].Northeast" :key="item.id">
-                            <span class="area-inner">{{item.city}}</span>
-                        </li>
-                    </ul>
-                    <div class="area-type">华南</div>
-                    <ul class="clrfix">
-                        <li class="area-item flexbox-layout" v-for="item in cityInfo[3].southchina" :key="item.id">
-                            <span class="area-inner">{{item.city}}</span>
-                        </li>
-                    </ul>
-                    <div class="area-type">华东</div>
-                    <ul class="clrfix">
-                        <li class="area-item flexbox-layout" v-for="item in cityInfo[4].eastchina" :key="item.id">
-                            <span class="area-inner">{{item.city}}</span>
-                        </li>
-                    </ul>
-                    <div class="area-type">西北</div>
-                    <ul class="clrfix">
-                        <li class="area-item flexbox-layout" v-for="item in cityInfo[5].northwest" :key="item.id">
-                            <span class="area-inner">{{item.city}}</span>
-                        </li>
-                    </ul>
-                    <div class="area-type">西南</div>
-                    <ul class="clrfix">
-                        <li class="area-item flexbox-layout" v-for="item in cityInfo[6].southwest" :key="item.id">
-                            <span class="area-inner">{{item.city}}</span>
-                        </li>
-                    </ul>
-                    <div class="area-type">华中</div>
-                    <ul class="clrfix">
-                        <li class="area-item flexbox-layout" v-for="item in cityInfo[7].centralchina" :key="item.id">
-                            <span class="area-inner">{{item.city}}</span>
-                        </li>
-                    </ul>
-                </template>
-            </div>
-            <div class="dialog-close" id="close" @click="handleCouponClose"></div>
+<div v-show="show">
+    <div class="mask"></div>
+    <div class="dialog-outer dialog-area">
+        <div class="area-more">
+            <div class="area-type">热门省份</div>
+            <template v-if="cityInfo.length !== 0">
+                <ul class="clrfix">
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[0].hotcity" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
+                    </li>
+                </ul>
+                <div class="area-type">华北</div>
+                <ul class="clrfix">
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[1].northchina" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
+                    </li>
+                </ul>
+                <div class="area-type">东北</div>
+                <ul class="clrfix">
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[2].Northeast" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
+                    </li>
+                </ul>
+                <div class="area-type">华南</div>
+                <ul class="clrfix">
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[3].southchina" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
+                    </li>
+                </ul>
+                <div class="area-type">华东</div>
+                <ul class="clrfix">
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[4].eastchina" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
+                    </li>
+                </ul>
+                <div class="area-type">西北</div>
+                <ul class="clrfix">
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[5].northwest" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
+                    </li>
+                </ul>
+                <div class="area-type">西南</div>
+                <ul class="clrfix">
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[6].southwest" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
+                    </li>
+                </ul>
+                <div class="area-type">华中</div>
+                <ul class="clrfix">
+                    <li class="area-item flexbox-layout" v-for="item in cityInfo[7].centralchina" :key="item.id">
+                        <span class="area-inner">{{item.city}}</span>
+                    </li>
+                </ul>
+            </template>
         </div>
+        <div class="dialog-close" id="close" @click="handleCouponClose"></div>
     </div>
+</div>
 </template>
-
 <script>
-    import {mapState} from "vuex"
-
-    export default {
-        props: ["show"],
-
-        computed: mapState({
+import {mapState} from "vuex"
+export default {
+    props: ["show"],
+    computed: mapState({
             cityInfo:(state) => {
                 return state.activity.cityInfo
-
             }
         }),
-
-        methods: {
-            handleCouponClose() {
-                this.$emit("close");
-            }
+    methods: {
+        handleCouponClose() {
+            this.$emit("close");
         }
     }
+}
+ 
 </script>
-
 <style>
     .dialog-area {
         top: 55%;

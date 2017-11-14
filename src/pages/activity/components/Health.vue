@@ -1,55 +1,56 @@
 <template>
-    <div>
-        <div class="module-outer super-prefer">
-            <div class="caption-outer">
-                <div class="caption-inner">
-                    <div class="caption-wrap">
-                        <div class="caption-txt">养生温泉</div>
-                    </div>
+<div>
+    <div class="module-outer super-prefer">
+        <div class="caption-outer">
+            <div class="caption-inner">
+                <div class="caption-wrap">
+                    <div class="caption-txt">养生温泉</div>
                 </div>
             </div>
-            <ul class="tag-list">
-                <li  class="tag-item">
-                    <div class="tag-inner">家庭</div>
-                </li>
-            </ul>
-            <div class="module-desc">快节奏生活中，很多人都是亚健康，精选地区特有矿物温泉，水质蕴含充分微量元素，养性怡情两不误！</div>
-            <ul class="dataContainer">
-                <li class="card-item"  v-for="item in healthInfo" :key="item.id">
-                    <a class="card-link">
-                        <div class="card-show img-container mpg-defaultimg-large">
-                            <img class="topic-img" :src="item.imgUrl"></img>
-                            <span class="list-location">北京</span>
-                        </div>
-                        <div class="card-info">
-                            <div class="card-name ellipsis2">{{item.title}}</div>
-                            <div class="card-main clrfix">
-                                <div class="card-sale price">￥<em class="price-num">{{item.price}}</em></div>
-                                <ul class="lighttxt-list">
-                                    <li class="lighttxt-item border-left lighttxt-light">{{item.characteristic1}}</li>
-                                    <li class="lighttxt-item border-left">{{item.characteristic2}}</li>
-                                    <li class="lighttxt-item border-left">{{item.characteristic3}}</li>
-                                </ul>
-                            </div>
-                            <div class="card-comment">{{item.comment}}</div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
         </div>
+        <ul class="tag-list">
+            <li  class="tag-item">
+                <div class="tag-inner">家庭</div>
+            </li>
+        </ul>
+        <div class="module-desc">快节奏生活中，很多人都是亚健康，精选地区特有矿物温泉，水质蕴含充分微量元素，养性怡情两不误！</div>
+        <ul class="dataContainer">
+            <li class="card-item"  v-for="item in healthInfo" :key="item.id">
+                <a class="card-link">
+                    <div class="card-show img-container mpg-defaultimg-large">
+                        <img class="topic-img" :src="item.imgUrl"></img>
+                        <span class="list-location">北京</span>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-name ellipsis2">{{item.title}}</div>
+                        <div class="card-main clrfix">
+                            <div class="card-sale price">￥<em class="price-num">{{item.price}}</em></div>
+                            <ul class="lighttxt-list">
+                                <li class="lighttxt-item border-left lighttxt-light">{{item.characteristic1}}</li>
+                                <li class="lighttxt-item border-left">{{item.characteristic2}}</li>
+                                <li class="lighttxt-item border-left">{{item.characteristic3}}</li>
+                            </ul>
+                        </div>
+                        <div class="card-comment">{{item.comment}}</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
     </div>
+</div>
 </template>
-
 <script>
-    export default {
-        computed: {
+export default {
+    computed: {
             healthInfo() {
+
                 return this.$store.state.activity.healthInfo
+                
             }
         }
-    }
+}
+   
 </script>
-
 <style>
     .tag-list {
         margin: .18rem 0;
@@ -137,8 +138,8 @@
         line-height: .34rem;
         border-radius: .04rem;
     }
-    </style>
-    <style scoped>
+</style>
+<style scoped>
     .caption-inner::after {
         background-image: linear-gradient(to right,#c12aff,#4c90ff);
     }

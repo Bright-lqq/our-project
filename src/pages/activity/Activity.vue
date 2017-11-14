@@ -11,6 +11,8 @@
         <activity-oneday />
         <activity-guardian />
         <activity-top />
+
+
     </div>
 </template>
 
@@ -29,28 +31,37 @@
     import { mapState, mapActions } from 'vuex'
     import axios from 'axios'
 
+
     export default {
-        components: {
-            "activity-header": header,
-            "activity-banner": banner,
-            "activity-discount": discount,
-            "activity-supervalue": supervalue,
-            "activity-landscape": landscape,
-            "activity-health": health,
-            "activity-parentchild": parentchild,
-            "activity-oneday": oneday,
-            "activity-guardian": guardian,
-            "activity-top": top
-        },
+    components: {
+        "activity-header": header,
+        "activity-banner": banner,
+        "activity-discount": discount,
+        "activity-supervalue": supervalue,
+        "activity-landscape": landscape,
+        "activity-health": health,
+        "activity-parentchild": parentchild,
+        "activity-oneday": oneday,
+        "activity-guardian": guardian,
+        "activity-top": top
 
-        mounted() {
-            this.getActivityData()
-        },
+        
 
-        methods: mapActions({
-            getActivityData: (dispatch) => {
-                dispatch(AJAX_GET_DATA)
-            }
-        })
-    }
+    },
+
+
+    mounted() {
+        this.getActivityData()
+    },
+
+    methods: mapActions({
+        getActivityData: (dispatch) => {
+            dispatch(AJAX_GET_DATA)
+        }
+    })
+  }
 </script>
+
+<style scoped>
+  
+</style>

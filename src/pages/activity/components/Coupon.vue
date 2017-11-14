@@ -1,65 +1,63 @@
 <template>
-    <div v-show="show">
-        <div class="mask"></div>
-        <div class="dialog-outer">
-            <div class="coupon-outer">
-                <div class="coupon-inner">
-                    <div class="coupon-num price">￥<em class="price-num">5</em></div>
-                    <div class="coupon-detail">
-                        <div class="coupon-title">新客门票代金券 </div>
-                        <div class="coupon-time">有效期30天</div>
-                    </div>
+<div v-show="show">
+    <div class="mask"></div>
+    <div class="dialog-outer">
+        <div class="coupon-outer">
+            <div class="coupon-inner">
+                <div class="coupon-num price">￥<em class="price-num">5</em></div>
+                <div class="coupon-detail">
+                    <div class="coupon-title">新客门票代金券 </div>
+                    <div class="coupon-time">有效期30天</div>
                 </div>
             </div>
-            <div class="dialog-content">
-                <div class="dialog-inner">
-                    <div class="login-outer">
-                        <div class="login-notes">您还未登陆哦！</div>
-                        <ul class="form-container">
-                            <li class="form-item">
-                                <input class="form-input" type="tel" maxlength="11" data-pattern="1[0-9]{10}" placeholder="请输入手机号">
-                            </li>
-                            <li class="form-item">
-                                <input class="form-input" placeholder="请输入验证码" type="tel" maxlength="6" data-pattern="[0-9]{6}">
-                                <span class="form-btn form-disabled">获取验证码</span>
-                            </li>
-                        </ul>
-                        <div class="dialog-btn form-disabled">登录领取</div>
-                        <div class="form-note">
-                            <span class="agree-protocol agree-checked">若您没有去哪儿网账号，输入手机号我们将自动为您注册账号，并将用您的去哪儿账户参与抽奖。</span>
-                            若您没有去哪儿网账号，输入手机号我们将自动为您注册账号，并将用您的去哪儿账户参与抽奖。
-                        </div>
-                    </div>
-                    <div class="result-outer">
-                        <div class="result-desc">领取中...</div>
-                        <div class="dialog-btn">确定</div>
-                    </div>
-                    <div class="rule-outer">
-                        <div class="rule-title">活动规则</div>
-                        <ul>
-                            <li class="rule-item">1.该代金券仅限去哪儿无线新客可领；</li>
-                            <li class="rule-item">2.该代金券使用时间为领取30天之内。</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="dialog-close" @click="handleCloseClick"></div>
         </div>
+        <div class="dialog-content">
+            <div class="dialog-inner">
+                <div class="login-outer">
+                    <div class="login-notes">您还未登陆哦！</div>
+                    <ul class="form-container">
+                        <li class="form-item">
+                            <input class="form-input" type="tel" maxlength="11" data-pattern="1[0-9]{10}" placeholder="请输入手机号">
+                        </li>
+                        <li class="form-item">
+                            <input class="form-input" placeholder="请输入验证码" type="tel" maxlength="6" data-pattern="[0-9]{6}">
+                            <span class="form-btn form-disabled">获取验证码</span>
+                        </li>
+                    </ul>
+                    <div class="dialog-btn form-disabled">登录领取</div>
+                    <div class="form-note">
+                        <span class="agree-protocol agree-checked">若您没有去哪儿网账号，输入手机号我们将自动为您注册账号，并将用您的去哪儿账户参与抽奖。</span>
+                        若您没有去哪儿网账号，输入手机号我们将自动为您注册账号，并将用您的去哪儿账户参与抽奖。
+                    </div>
+                </div>
+                <div class="result-outer">
+                    <div class="result-desc">领取中...</div>
+                    <div class="dialog-btn">确定</div>
+                </div>
+                <div class="rule-outer">
+                    <div class="rule-title">活动规则</div>
+                    <ul>
+                        <li class="rule-item">1.该代金券仅限去哪儿无线新客可领；</li>
+                        <li class="rule-item">2.该代金券使用时间为领取30天之内。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dialog-close" @click="handleCloseClick"></div>
     </div>
+</div>
 </template>
-
 <script>
-    export default {
-        props: ["show"],
+export default {
+    props: ["show"],
 
-        methods: {
-            handleCloseClick() {
-                this.$emit("close");
-            }
+    methods: {
+        handleCloseClick() {
+            this.$emit("close");
         }
     }
+}
 </script>
-
 <style>
     .mask {
         position: fixed;
@@ -73,7 +71,6 @@
         background: rgba(0,0,0,.5);
     }
     .dialog-outer {
-        
         position: fixed;
         z-index: 5;
         top: 50%;
