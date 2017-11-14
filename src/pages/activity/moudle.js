@@ -21,15 +21,12 @@ export default {
 			state.onedayInfo = payload.onedayInfo;
 			state.guardianInfo = payload.guardianInfo;
 			state.cityInfo = payload.cityInfo;
-			
-
 		}
 	},
 	actions: {
 		[AJAX_GET_DATA](context) {
             axios.get('/static/activity.json')
 				.then((response) => {
-					console.log(response)
 					context.commit(SET_DATA, response.data.data);
 				})
 		}
